@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#cfkj {
+    width: 100%;
+    height: 5302px;
+}
+.content {
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+/* -----------header区域的开始---------- */
+.header{
+    width: 100%;
+    height: 83px;
+    background: #fff;
+}
+.logo {
+    height: 83px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.logo ul {
+    list-style: none;
+    height: 83px;
+    margin-left: 420px;
+}
+.logo li {
+    width: 70px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 35px;
+    padding-left: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+.logo span {
+    font-size: 14px;
+    line-height: 20px;
+}
+span,li a {
+    display: block;
+}
+li:hover  a{
+    margin-top:-20px;
+}
+
+
+
+/* ------------header区域的结束----------- */
+/* --------------banner区域的开始---------- */
+.banner {
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/5a5d727961540.jpg);
+}
+/* --------------banner区域的结束---------- */
+/* --------------main1区域的开始---------- */
+.main1 {
+    width: 100%;
+    height: 726px;
+    background: #fff;
+}
+.h2 {
+    margin-top: 40px;
+}
+.main1 p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.main1-1 {
+    width: 1140px;
+    height: 440px;
+    margin-top: 56px;
+}
+.main1-1 img {
+    margin: 4px 4px 0 20px;
+}
+
+/* --------------main1区域的结束---------- */
+/* --------------main1区域的开始---------- */
+.main2 {
+    width: 100%;
+    height: 765px;
+    background: #ebeff1;
+}
+.main2 p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.main2-1 {
+    width: 1170px;
+    height: 500px;
+}
+.img0 {
+    margin:55px 0 0 20px;
+}
+.img1 {
+    width: 283px;
+    height: 166px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.img1-1 {
+    display: none;
+}
+.img1:hover .img1-1 {
+    display:inline-block;
+}
+.img1:hover .img1-2 {
+    display: none;
+}
+/* --------------main2区域的结束---------- */
+/* --------------main3区域的开始---------- */
+.main3 {
+    width: 100%;
+    height: 682px;
+}
+.main3-1 {
+    width: 1170px;
+    height: 682px;
+    margin-top: 56px;
+}
+.main3 p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.main3-1 img {
+    width: 282px;
+    height: 211px;
+}
+/* --------------main3区域的结束---------- */
+/* --------------main4区域的开始---------- */
+.main4 {
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/ind_news_bg.jpg);
+}
+.main4 p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.box {
+    width: 1170px;
+    height: 530px;
+    margin-top: 55px;
+}
+.box1 {
+    width: 550px;
+    height: 167px;
+    float: left;
+    text-align: left;
+    margin:0 40px 17px 20px; 
+    background: #fff;
+}
+.box2 {
+    width: 550px;
+    height: 167px;
+    float: left;
+    text-align: left;
+    margin:0 0 17px 0; 
+    background: #fff;
+}
+.box1 img,.box2 img {
+    float: left;
+}
+.box1 h3,.box2 h3 {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.box1 p,.box2 p {
+    font-size: 12px;
+    line-height: 16px;
+    white-space: pre-line;
+    text-indent: 1em;
+    margin-left: 200px;
+}
+.box1 span,.box2 span {
+    float: right;
+    font-style: 12px;
+    line-height: 12px;
+    margin-right: 50px;
+}
+
+/* --------------main4区域的结束---------- */
+/* --------------main5区域的开始---------- */
+.main5 {
+    width: 100%;
+    height: 912px;
+}
+.main5 p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.main5-1 {
+    width: 1170px;
+    height: 912px;
+    margin-top: 55px;
+}
+.main5-2 {
+    width: 285px;
+    height: 132px;
+    text-align: center;
+    border-bottom: 4px solid #0093dd;
+    float: left;
+}
+.main5-3 {
+    width: 285px;
+    height: 132px;
+    text-align: center;
+    border-bottom: 4px solid #e6e6e6;
+    float: left;
+}
+.main5-2 p,.main5-3 p {
+    font-size: 14px;
+    line-height: 50px;
+    margin-top: 0px;
+    color: #b2b2b2;
+}
+.liutu img {
+    margin-top: 50px;
+}
+/* --------------main6区域的结束---------- */
+.main6 {
+    width: 100%;
+    height: 224px;
+    background: #0066c6;
+}
+.main6-2 {
+    width: 376px;
+    height: 129px;
+    float: left;
+    border-right: 1px solid #0052a7;
+    margin-top: 45px;
+}
+.main6-2 h3 {
+    font-size: 72px;
+    line-height: 72px;
+    color: #fff;
+    margin-top: 0;
+}
+.main6-2 p {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 35px;
+    color: #fff;
+}
+.main6-3 {
+    width: 1170px;
+    height:80px ;
+    border-bottom: 5px solid #0062c0;
+    float: left;
+    margin-top: -176px;
+}
+/* --------------main6区域的结束---------- */
+/* --------------footer区域的结束---------- */
+.footer {
+    width: 100%;
+    height: 662px;
+    background-image: url(../images/footer_bj.jpg);
+}
+.footer p {
+    font-size: 18px;
+    line-height:28px ;
+    color: #666666;
+    margin-top: 25px;
+}
+.contact {
+    width: 1170px;
+    height: 190px;
+    margin-top: 50px;
+}
+.f1 {
+    width: 267px;
+    height: 80px;
+    background-image: url(../images/foot_tel.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    margin-left: 80px;
+}
+.f2 {
+    width: 267px;
+    height: 80px;
+    background-image: url(../images/foot_wx.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+}
+.f3 {
+    width: 267px;
+    height: 80px;
+    background-image: url(../images/foot_qq.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+}
+.f4 {
+    width: 267px;
+    height: 80px;
+    background-image: url(../images/foot_sq.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+}
+.f1 p,.f2 p,.f3 p,.f4 p {
+    line-height: 15px;
+    line-height: 25px;
+    white-space: pre-line;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.d1 {
+    width: 240px;
+    height: 80px;
+    background-image: url(../images/foot_c1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    border: 1px solid #1d1c1d;
+    margin-left: 80px;
+}
+.d2 {
+    width: 240px;
+    height: 80px;
+    background-image: url(../images/foot_c2.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    border: 1px solid #1d1c1d;
+    margin-left: 25px;
+}
+.d3 {
+    width: 240px;
+    height: 80px;
+    background-image: url(../images/foot_c3.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    border: 1px solid #1d1c1d;
+    margin-left: 25px;
+}
+.d4 {
+    width: 240px;
+    height: 80px;
+    background-image: url(../images/foot_c4.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    border: 1px solid #1d1c1d;
+    margin-left: 25px;
+}
+.d1 p,.d2 p,.d3 p,.d4 p {
+    font-size: 15px;
+    line-height: 80px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.di1 {
+    text-align: left;
+    margin:60px 0 0 80px;
+    float: left;
+}
+.di1 p {
+    font-size: 12px;
+    color: #7f7f7f;
+    line-height: 30px;
+    margin-top: 0px;
+}
+.di2 {
+    margin-top: 50px;
+}
+.di2 img{
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+}
+.di2 p {
+    padding: 0 60px;
+    font-size: 12px;
+    line-height: 32px;
+    margin-top: 0px;
+    margin-left: 760px;
+}
+.di2 span {
+    display: inline-block;
+    margin-left: 128px;
+}
+/* --------------footer区域的结束---------- */
