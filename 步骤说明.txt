@@ -1,0 +1,15 @@
+1. 复制仓库地址 https://github.com/Liting1/liting1.github.io.git
+
+2. 打开本地git客户端， 鼠标右键git bash here
+
+3. 下载远程的文件到本地 git clone https://github.com/Liting1/liting1.github.io.git
+
+4. 在刚刚下载的文件夹中添加文件或者文件夹（注意：.git文件夹是不能删除的）
+
+5. 把文件提交到缓冲区  git add .
+
+6. 把文件提交到本地仓储 git commit -m '你这次上传文件的说明'
+
+7. 上传到远程仓储 git push origin master
+
+8. 输入你的github账号还有密码 ，如果账号密码错误， 从新执行步骤 7
