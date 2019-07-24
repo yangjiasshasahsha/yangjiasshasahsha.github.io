@@ -523,10 +523,8 @@ li:hover  a{
 /* --------------footer区域的结束---------- */
 .you {
     position: fixed;
-    right: 0;
+    right: 1.5%;
     bottom: 30%;
-}
-.you ul {
 }
 .li1 {
     width: 48px;
