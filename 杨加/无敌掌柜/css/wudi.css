@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wudi {
+    width: 100%;
+    height: 3437px;
+    background: #5a5a5a;
+}
+.content {
+    width: 1110px;
+    height: 100%;
+    background: #5b5;
+    margin: auto;
+    overflow: hidden;
+}
+/* ----------header区域的开始------------ */
+.header {
+    width: 100%;
+    height: 70px;
+}
+.logo {
+    width: 100%;
+    height: 70px;
+    background-image: url(../images/无敌掌柜_03.png);
+    background-repeat: no-repeat;
+    background-position:left center;
+}
+.ul1 ul {
+    list-style: none;
+    margin-left: 590px;
+}
+.ul1 li {
+    float: left;
+    font-size: 14px;
+    padding:0 30px;
+    line-height: 70px;
+}
+.ul1 li:hover {
+    color: #4a9fef;
+}
+.ul1 span {
+    display: block;
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    border: 2px solid #4991f7;
+    color: #4991f7;
+}
+/* ------------header区域的结束----------- */
+/* --------------banner区域的开始--------- */
+.banner {
+    background-image: url(../images/logo.png);
+    height: 424px;
+}
+/* -------------------banner区域的结----------- */
+/* -------------main1区域的开始----------- */
+.main1 {
+    width: 100%;
+    height: 152px;
+    background: #003e71;
+    overflow: hidden;
+}
+.main1-1 {
+    width:160px;
+    height: 152px; 
+    margin: 42px 0 0 48px;
+    text-align: center;
+    float: left;
+}
+.main1-1 h2,.main1-2 h2 {
+    font-size:35px;
+    line-height: 40px;
+    width:160px;
+    height:40px;
+    border-left: 5px solid #4b8ef7 ;
+    color: #fff;
+}
+.main1-1 span,.main1-2 span {
+    font-size:24px;
+    line-height: 40px;
+    color: #fff;
+}
+.main1-1 p,.main1-2 p {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 25px;
+    color: #8a8f95;
+}
+.main1-2 {
+    width:160px;
+    height: 152px; 
+    margin: 42px 0 0 288px;
+    text-align: center;
+    float: left;
+}
+/* ------------main1区域的结束--------- */
+/* ------------main2区域的开始--------- */
+.mian2 {
+    width:100%;
+    height: 596px;
+}
+.box1 {
+    width: 256px;
+    height: 302px;
+    background: #5d5;
+    float: left;
+}
+.box2 {
+    width: 256px;
+    height: 302px;
+    background: #5d5;
+    float: left;
+    margin-left: 24px;
+}
+.box1 h2,.box2 h2 {
+    font-size: 20px;
+    color: #444444;
+    line-height: 20px;
+    margin:20px 0 0 70px;
+}
+.box1 p,.box2 p {
+    font-size: 14px;
+    color: #c3c3c3;
+    line-height: 20px;
+    margin: 20px 0 0 10px;
+}
+/* ------------main2区域的结束--------- */
+/* ------------main3区域的开始--------- */
+.main3 {
+    width: 100%;
+    height: 600px;
+    background: red;
+}
+.main3-1 {
+    text-align: center;
+}
+.main3-1 h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 80px;
+}
+.main3-1 p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    color: #929292;
+}
+.sb {
+    width:1110px;
+    height: 400px;
+    margin-top: 60px;
+}
+.sb1 {
+    width: 230px;
+    height: 200px;
+    float: left;
+    margin-left: 38px;
+}
+.sb1 img,.sb2 img {
+    margin-left: 90px;
+}
+.sb1 h3,.sb2 h3 {
+    margin-left:40px;
+    margin-top: 36px; 
+    font-size: 20px;
+    line-height: 20px;
+}
+.sb1 p,.sb2 p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 17px;
+    color: #d4d4d4;
+}
+.sb2 {
+    width: 230px;
+    height: 200px;
+    float: left;
+    margin-left: 160px;
+}
+/* ------------main3区域的结束--------- */
+/* ------------main4区域的开始--------- */
+.main4 {
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    overflow: hidden;
+}
+.main4 h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 165px;
+}
+.main4 p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #8a8a8a;
+    margin-top: 22px;
+}
+.main4-1 {
+    width: 253px;
+    height: 217px;
+    float: left;
+    margin: 62px 0 0 38px;
+    background-image: url(../images/icon1.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-1 p,.main4-2 p,.main4-3 p,.main4-4 p,.main4-5 p,.main4-6 p,.main4-7 p,.main4-8 p {
+    margin-left: 160px;
+    font-size: 14px;
+    color: #333333;
+}
+.main4-2,.main4-3,.main4-4 {
+    width: 253px;
+    height: 217px;
+    float: left;
+    margin: 62px 0 0 20px;
+}
+.main4-2 {
+    background-image: url(../images/icon2.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-3 {
+    background-image: url(../images/icon3.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-4 {
+    background-image: url(../images/icon4.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-5 {
+    width: 253px;
+    height: 217px;
+    float: left;
+    margin-left: 38px;
+    margin-top: 24px;
+    background-image: url(../images/icon5.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-7,.main4-6,.main4-8 {
+    width: 253px;
+    height: 217px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+.main4-6 {
+    background-image: url(../images/icon6.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-7 {
+    background-image: url(../images/icon7.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+.main4-8 {
+    background-image: url(../images/icon8.gif);
+    background-repeat: no-repeat;
+    background-position:12px 158px ;
+}
+/* ------------main4区域的结束--------- */
+/* ------------main5区域的开始--------- */
+.main5 {
+    width: 100%;
+    height: 826px;
+    background:pink;
+}
+/* ------------main5区域的结束--------- */
+/* ------------main6区域的开始--------- */
+.main6 {
+    width: 100%;
+    height: 516px;
+}
+/* ------------main6区域的结束--------- */
+/* ------------footer区域的开始--------- */
+.footer {
+    width: 100%;
+    height: 260px;
+    background: #35414d;
+}
+/* ------------footer区域的结束--------- */
