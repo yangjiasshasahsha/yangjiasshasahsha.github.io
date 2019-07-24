@@ -520,3 +520,69 @@ li:hover  a{
     margin-left: 128px;
 }
 /* --------------footer区域的结束---------- */
+.you {
+    position: fixed;
+    right: 0;
+    bottom: 30%;
+}
+.you ul {
+}
+.li1 {
+    width: 48px;
+    height: 47px;
+    list-style: none;
+    background-image: url(../images/123.png);
+    background-position:0 0;
+    overflow: hidden;
+}
+.li2 {
+    width: 48px;
+    height: 47px;
+    list-style: none;
+    background-image: url(../images/123.png);
+    background-position:0 -48px;
+    overflow: hidden;
+}
+.li3 {
+    width: 48px;
+    height: 47px;
+    list-style: none;
+    background-image: url(../images/123.png);
+    background-position:0 -96px ;
+    overflow: hidden;
+}
+.li4 {
+    width: 48px;
+    height: 47px;
+    list-style: none;
+    background-image: url(../images/123.png);
+    background-position:0 -144px ;
+}
+.li1:hover {
+    background-position:-48px 0;
+    overflow: visible;
+}
+.li2:hover {
+    background-position:-48px -48px;
+    overflow: visible;
+}
+.li3:hover {
+    background-position:-48px -96px;
+    overflow: visible;
+}
+.li4:hover {
+    background-position:-48px -144px;
+    overflow: visible;
+}
+.span1 {
+    display:inline-block;
+    width: 154px;
+    margin-left: -154px;
+}
+.span2 {
+    display:inline-block;
+    width: 121px;
+    margin-left: -116px;
+}
+
+
