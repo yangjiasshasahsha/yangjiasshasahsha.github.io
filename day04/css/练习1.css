@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    background-image: url(../images/beijin.jpeg);
+    height: 402px;
+    width: 1350px;
+    background-position: center center;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid; */
+}
+h2 {
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 48px;
+    text-transform: capitalize;
+    padding-top: 42px;
+}
+.text {
+    font-size: 22px;
+    color:#dddddd;
+    line-height: 22px;
+    margin-top: 42px;
+}
+.main1 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 90px;
+}
+.main1 img,.main2 img,.main3 img,.main4 img {
+    float: left;
+    margin-top: 17.5px;
+}
+.p1 {
+    margin-top: 17.5px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 69px;
+    color: #cbcbcb;
+}
+.p2 {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 69px;
+    color: #ffffff;
+}
+.main2,.main3,.main4 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 30px;
+}
+.main5 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 90px;
+    box-shadow: 1px 1px 2px #aaaaaa;
+}
+.main5 img,.main6 img,.main7 img,.main8 img {
+    float: left;
+}
+.main5 p ,.main6 p ,.main7 p ,.main8 p {
+    text-align: left;
+    line-height: 82px;
+    color: #727272;
+    font-size: 14px;
+}
+.main6 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 2px #aaaaaa;
+}
+.main7 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 2px #aaaaaa;
+}
+.main8 {
+    float: left;
+    width: 267px;
+    height: 82px;
+    margin-top: 36px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 2px #aaaaaa;
+}
+

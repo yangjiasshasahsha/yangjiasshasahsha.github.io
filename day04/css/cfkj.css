@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#cfkj {
+    width: 1350px;
+    height: 800px;
+    background-image: url(../images/beijin.jpeg);
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+#cfkj h2 {
+    font-size: 47px;
+    line-height: 47px;
+    margin-top: 42px;
+    color: #f1f7ff
+}
+.t {
+    font-size: 20px;
+    margin-top: 23px;
+    color: #f1f7ff;
+}
+.nav {
+    width: 1142px;
+    height: 530px;
+    margin: auto;
+    margin-top: 55px;
+}
+.nav1 {
+    width: 550px;
+    height: 167px;
+    float: left;
+    background: white;
+}
+.nav1 img ,.nav2 img {
+    float: left;
+}
+.nav2 {
+    width: 550px;
+    height: 167px;
+    background:white;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+.main1 {
+    width: 365px;
+    height: 167px;
+    margin-left: 170px;
+    text-align: left;
+}
+.main1 h3 {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.main1 .a {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 14px;
+    margin-left: 20px;
+    text-indent: 1em;
+    color: #e5ae88;
+}
+.b {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #d5ccd5;
+    margin-top: 15px;
+}
+.b span {
+    float: right; 
+}

@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+}
+.qianfen {
+    width: 1000px;
+    height: 63px;
+    background: #232323;
+    margin:auto;
+}
+.banner {
+    width: 207px;
+    height: 62px;
+    float: left;
+    background-image: url(../images/qf_logo.jpg);
+}
+ul {
+    list-style:none;
+    float: right;
+}
+a {
+    text-decoration: none;
+    padding: 0px 15px;
+    display: block;
+    height: 63px;
+    color: white;
+}
+li {
+    height: 63px;
+    line-height: 63px;
+    float: left;
+}
+li:hover {
+    background: orange;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: maroon;
+}

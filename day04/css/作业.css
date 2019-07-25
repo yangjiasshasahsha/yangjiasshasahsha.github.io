@@ -1,0 +1,203 @@
+* {
+    margin:0;
+    padding: 0;
+}
+#zy {
+    width: 780px;
+    height: 1609px;
+    background:#d6dae2;
+    margin: auto;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    height: 354px;
+    background: #f2f1ef;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.main1 {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    background: #f2f1ef;
+    overflow: hidden;
+}
+.jp {
+    width: 100%;
+    height: 700px;
+    margin-top:20px;
+    background: #f2f1ef;
+    overflow: hidden;
+}
+.t {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.t h2 {
+    font-size: 20px;
+    background-image: url(../images/icon1.png);
+    background-repeat: no-repeat;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-position: center left;    
+}
+.one {
+    width: 226px;
+    height: 264px;
+    background: white;
+    float: left;
+    margin-left: 20px;
+}
+.one p,.two p,.san p {
+    line-height: 22px;
+    font-size: 12px;
+    color: #cbcbcb;
+    margin-left: 10px;
+}
+.one h4,.two h4,.san h4 {
+    line-height:24px ;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left:10px;
+}
+.two {
+    width: 226px;
+    height: 264px;
+    float: left;
+    margin-left: 20px;
+    background: white;
+}
+.san {
+    width: 226px;
+    height: 264px;
+    float: left;
+    margin-left: 20px;
+    background: white;
+}
+.e {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.e h2 {
+    font-size: 20px;
+    background-image: url(../images/icon2.png);
+    background-repeat: no-repeat;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-position: center left;  
+}
+.x {
+    width: 180px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.x h2 {
+    font-size: 20px;
+    background-image: url(../images/icon2.png);
+    background-repeat: no-repeat;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-position: center left;    
+}
+.ks1 {
+    width: 740px;
+    height: 125px;
+    background: white;
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+.ks1 img {
+    margin: 20px;
+    float: left;
+}
+.kst1,.kst2,.kst3 {
+    width: 400px;
+    height: 125px;
+    float: left;
+}
+.kst1 h3 ,.kst2 h3 ,.kst3 h3 {
+    margin-top: 20px;
+    font-size: 17px;
+}
+.kst2-2,.kst1-2,.kst3-2 {
+    font-size: 14px;
+}
+.kst1-1 ,.kst2-1,.kst3-1  {
+    width: 134px;
+    line-height: 36px;;
+    text-align: center;
+    font-size: 12px;
+    background-image: url(../images/icon4.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.ks2, .ks3 {
+    width: 740px;
+    height: 125px;
+    background:white;
+    margin-left:20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.ks2 img {
+    margin: 20px;
+    float: left;
+}
+.ks3 img {
+    margin: 20px;
+    float: left;
+}
+.ks1image  {
+    background-image: url(../images/icon-at.png);
+    height: 125px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.ks2image  {
+    background-image: url(../images/icon-video.png);
+    height: 125px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.ks3image  {
+    background-image: url(../images/icon-laptop.png);
+    height: 125px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.jp1 {
+    width: 760px;
+    height: 160px;
+    margin:20px;
+}
+.jp1 img {
+    float: left;
+}
+.jpt1 {
+    width: 458px;
+    height: 160px;
+    float: left;
+    margin-left: 20px;
+}
+.jpt1 h4 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+.jpt2 {
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+}
+
+
