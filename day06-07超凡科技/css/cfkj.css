@@ -54,7 +54,7 @@ span,li a {
 }
 li:hover  a{
     margin-top:-20px;
-   
+    transition: all .5s;
 }
 
 
