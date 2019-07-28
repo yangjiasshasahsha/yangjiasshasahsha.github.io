@@ -455,6 +455,7 @@ body {
     left: 0;
     bottom: 0;
     background: #0008;
+    z-index: 1;
 }
 .i2 h3,.i3 h3 {
     width: 100%;
@@ -539,6 +540,9 @@ body {
     text-align: center;
     line-height: 36px;
     font-size: 14px;
+}
+.main4 li:hover {
+    background: #ffa000;
 }
 .main4-3 {
     margin-left: 40px !important;
@@ -909,6 +913,7 @@ body {
     height: 80px;
     background: #fff;
     border: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
 }
 .rg .rg1-1{
     width: 28px;
