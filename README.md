@@ -9,3 +9,6 @@
 <a href="https://yangjiasshasahsha.github.io/day04/%E5%8D%83%E9%94%8B%E4%BA%92%E8%81%94/html/qianfenhullian.html">day04千锋互联</a>
 
 <a href="https://yangjiasshasahsha.github.io/day04/%E7%9F%B3%E5%AE%87%E7%BD%91%E7%BB%9C/html/shiyu.html">day04石宇网络</a>
+
+<a href="https://yangjiasshasahsha.github.io/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html/gl.html">day10管理系统</a>
+
