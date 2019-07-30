@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+html,body{
+
+    height: 100%;
+
+}
+#warpper{
+  height: 100%;
+}
+.top{
+    height: 86px;
+    background: #7ab5e9;
+    position: relative;
+    border-bottom: 2px solid #265fa6;
+    box-sizing: border-box;
+    
+}
+.top h1{
+    height: 100%;
+     background: url(../images/logo.png) no-repeat 22px bottom;
+}
+.top ul{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.top ul li {
+    width: 95px;
+    float: left;
+    margin-bottom: -2px;
+    text-align: center;
+   
+}
+.top ul li a{
+    padding:5px 14px;
+    font-size: 12px;
+    color: white;
+    line-height: 25px;
+
+}
+.top ul li img{
+   margin:  0 auto;
+    display: block;
+    
+}
+.top ul li:hover{
+    background: url(../images/libj.png) no-repeat ;
+    
+}
+
+ .content{
+    position: fixed;
+    top: 86px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow:auto;
+  
+}
+  .content-left{
+    height: 100%;
+    width: 190px;
+    background:url(../images/left_02_bj.jpg);
+    float: left;
+   
+} 
+.content-left p {
+    height: 26px;
+     background: url(../images/e_01.jpg) no-repeat left center;
+}
+/* .content-left ul{
+  
+}  */
+.content-left ul li{
+    line-height: 33px;
+    background: url(../images/left_04.jpg) no-repeat top right;
+}
+.content-left ul li a{
+    color: #fff;
+    display: block;
+    font-size: 12px;
+}
+.content-left ul li a img{
+    padding:0 10px 0 14px;
+    line-height: 33px;
+}
+.content-left ul li:hover a{
+    background:url(../images/left_hover.jpg);
+    color: black;
+}
+
+.content-left ul li ol{
+    display:none;
+}
+.content-left ul li:hover ol{
+     display:block;
+}
+.content-left ul li ol li{
+  
+    line-height: 30px;
+
+}
+.content-left ul li ol li a{
+ 
+      font-size: 12px;
+      line-height: 33px;
+      color: white;
+      
+}
+.content-left ul li ol li a img{
+     padding: 0 10px 0 14px;
+
+}
+.content-left ul li:hover ol li a{
+    background:url(../images/left_02_bj.jpg);
+    color: white;
+}
+.content-right{
+    height: 100%;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+.content-right ul{
+     width: 100%;
+}
+.content-right ul li{
+    float: left;
+    margin: 0 5px;
+}
+.content-right ul li:nth-child(1){
+     padding-left: 20px;
+      background: url(../images/home.jpg) no-repeat 12px center;
+   
+}
+.content-right ul li a{
+   
+     font-size: 12px;
+     color:#636363;
+}
+.content-right fieldset{
+    border: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #e3e3e3;
+}
+.content-right fieldset  h5{
+    margin-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 400;
+    display: inline-block;
+
+}
+.content-right fieldset h5 img{
+    padding:0 12px;
+    vertical-align:middle;
+
+   
+}
+.content-right fieldset h5 span{
+    vertical-align:middle;
+}
+.content-right fieldset label{
+             font-size: 14px;
+             padding-left: 14px;
+}
+.content-right fieldset input{
+        outline: none;
+        width: 120px;
+        height: 23px;
+}
+.content-right fieldset select{
+    width: 140px;
+    height: 25px;
+    outline: none;
+    font-size: 12px;
+    color:#c4aeb9;
+}
+.content-right fieldset  button{
+    width: 58px;
+    height: 24px;
+    color: black;
+    font-size: 12px;
+    margin-left: 22px;
+}
+.content-right fieldset table{
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+    border-spacing: 0;
+    font-size: 12px;
+    border: 1px solid #d6d6d6;
+}
+.content-right fieldset table thead{
+    background:#f7f7f7;
+}
+.content-right fieldset table thead tr td{
+    width: 12%;
+    height: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    
+}
+.content-right fieldset table thead tr td input{
+    width: 13px;
+    height: 13px;
+
+}
+.content-right fieldset table tbody tr td{
+      width: 12%;
+      height: 30px;
+      text-align: center;
+      font-size: 12px;
+      color:black;
+ }
+ .content-right fieldset table tbody tr td input{
+      width: 13px;
+      height: 13px;
+ }
+ .content-right fieldset table tbody tr:nth-child(2n){
+     background: #f7f7f7;
+    
+ }
+  .content-right .sj{
+      position: absolute;
+      left: 22px;
+      bottom:40px;
+      font-size: 12px;
+      color:black;
+  }
+   .content-right .btn2{
+        position: absolute;
+         bottom:35px;
+         right: 40px;
+   }
+      .content-right .btn2 li{
+          float: left;
+          margin-left: 5px;
+      }
+   .content-right .btn2 li a {
+         text-align: center;
+         font-size: 12px;
+         color: black;
+        line-height: 20px;
+        padding: 5px 10px;
+        
+   }
+    .content-right .btn2 li:nth-child(2) a{
+        border: 1px solid #a3a3a3;
+        background: #417eb7;
+        color: white;
+        font-weight: bold;
+    }
+    .content-right .btn2 li:nth-child(3) a{
+         border: 1px solid #a3a3a3;
+    }
+     .content-right .btn2 li:nth-child(4) a{
+         border: 1px solid #a3a3a3;
+    }

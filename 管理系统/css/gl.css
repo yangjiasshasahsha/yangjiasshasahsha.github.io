@@ -1,0 +1,321 @@
+*{margin: 0;padding: 0;}
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #bc58bc;
+}
+.top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 87px;
+    background: #7ab5e9;
+    overflow: hidden;
+}
+.bottom {
+    position: absolute;
+    top: 87px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+}
+.left {
+    position: fixed;
+    width: 200px;
+    left: 0;
+    height: 100%;
+    background: #417ec8;
+}
+.right {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    right: 0;
+    bottom:0;
+}
+.top h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 30px 0 0 30px;
+}
+.top ul {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    overflow: hidden;
+}
+.top ul li {
+    width: 95px;
+    height: 58px;
+    list-style: none;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.top1 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png);
+}
+.top li:hover .top1{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px 0;
+}
+.top li:hover {
+    background: url(../images/libj.png);
+}
+.bj1 {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/left_02_bj.jpg);
+}
+.bj2 {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background: url(../images/left_02_bj.jpg);
+}
+.top2 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -35px;
+}
+.top li:hover .top2{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -35px;
+}
+.top3 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -70px;
+}
+.top li:hover .top3{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -70px;
+}
+.top4 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -105px;
+}
+.top li:hover .top4{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -105px;
+}
+.top5 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -140px;
+}
+.top li:hover .top5{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -140px;
+}
+.top6 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -175px;
+}
+.top li:hover .top6{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -175px;
+}
+.top7 {
+    width:30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/css1.png) 0px -210px;
+}
+.top li:hover .top7{
+    width: 36px;
+    height: 30px;
+    background: url(../images/css1.png) -35px -210px;
+}
+.left-bj {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background: url(../images/e_01.jpg);
+} 
+.left .ul1 {
+    margin-top: 30px;
+}
+.left .ul1 li{
+    background: #417ec8;
+    list-style: none;
+}
+.ul1 p {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+}
+.ul1-1 {
+    display: none;
+}
+.ul1-1 li {
+    width: 140px !important;
+    height: 36px;
+}
+.ul1 .ul1-1 li,.ul2 .ul1-1 li,.ul3 .ul1-1 li {
+    padding-left:60px;
+}
+.ul1 li:hover .ul1-1,.ul2 li:hover .ul1-1,.ul3 li:hover .ul1-1 {
+    display:block;
+}
+.ul1 li:hover ,.ul2 li:hover,.ul3 li:hover {
+    background: url(../images/left_hover.jpg) 2px top;
+}
+.ul2 li,.ul3 li{
+    width: 200px;
+    background: #417ec8;
+    list-style: none;
+}
+.ul2 p,.ul3 p {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+}
+.ul1 span {
+    display:inline-block;
+    width: 18px;
+    height: 16px;
+    background: url(../images/css2.png);
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.ul2 span {
+    display:inline-block;
+    width: 18px;
+    height: 16px;
+    background: url(../images/css2.png) 0 -35px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.ul3 span {
+    display:inline-block;
+    width: 18px;
+    height: 16px;
+    background: url(../images/css2.png) 0 -70px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.ul1 li:hover span {
+    background: url(../images/css2.png) -20px 0;
+}
+.ul2 li:hover span {
+    background: url(../images/css2.png) -20px -35px;
+}
+.ul3 li:hover span {
+    background: url(../images/css2.png) -20px -70px;
+}
+.ul1-1 li div{
+    display: inline-block;
+    width: 4px;
+    height: 6px;
+    background:url(../images/jiao.png);
+    margin-right: 20px;
+}
+.right .xxx {
+    display: inline-block;
+    width:5px;
+    height: 7px; 
+    background: url(../images/home.jpg);
+    margin-right: 10px;
+}
+.right .ttt {
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom:1px solid gray;
+}
+.right-span1 {
+    display:inline-block;
+    height: 23px;
+    width: 24px;
+    background: url(../images/seacth.jpg);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.right-p1 {
+    display: block;
+    height: 23px;
+}
+.right-span2 {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 23px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.right-p1 label {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.right-p1 select{
+    width: 173px;
+}
+#cx {
+    width: 50px;
+}
+.right th {
+    width: 200px;
+}
+.right td {
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+.span4 {
+    display: block;
+    width:16px;
+    height: 16px; 
+    background: url(../images/device-1.png);
+    margin: auto;
+}
+.span5 {
+    display: block;
+    width:16px;
+    height: 16px; 
+    background: url(../images/share-1.png);
+    margin: auto;
+}
+.span6 {
+    display: block;
+    width:16px;
+    height: 16px; 
+    background: url(../images/xg.png);
+    margin: auto;
+}
+.right td {
+    font-size: 12px;
+}
+.right tr:nth-child(2n+1) {
+    background: #ccc8;
+}
