@@ -1,7 +1,13 @@
+<h2>day11作业</h2>
+<a href="https://yangjiasshasahsha.github.io/day11/html/xr.html">day11安卓小人</a>
+
+<a href="https://yangjiasshasahsha.github.io/day11/html/shousuo.html">day11搜索框</a>
 <h2>day10作业</h2>
 <a href="https://yangjiasshasahsha.github.io/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html/gl.html">day10管理系统</a>
 <h2>day09作业</h2>
 <a href="https://yangjiasshasahsha.github.io/day09-%E5%B0%8F%E9%B9%BF/html/%E5%B0%8F%E9%B9%BF.html">day09小鹿</a>
+<h2>day08作业</h2>
+<a href="https://yangjiasshasahsha.github.io/360%E5%AE%98%E7%BD%91/html/360.html">day08 360</a>
 <h2>day06-07作业</h2>
 <a href="https://yangjiasshasahsha.github.io/day06-07%E8%B6%85%E5%87%A1%E7%A7%91%E6%8A%80/html/cfkj.html">day06-day07超凡科技</a>
 <h2>day05作业</h2>
