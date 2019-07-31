@@ -1,4 +1,5 @@
 <h2>day11作业</h2>
+<a href="https://yangjiasshasahsha.github.io/day11/html/lx1.html">day11语义化标签</a>
 <a href="https://yangjiasshasahsha.github.io/day11/html/xr.html">day11安卓小人</a>
 
 <a href="https://yangjiasshasahsha.github.io/day11/html/shousuo.html">day11搜索框</a>
