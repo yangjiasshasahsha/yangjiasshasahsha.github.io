@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body {
+    height: 100%;
+}
+.tx::after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.hlj {
+    height: 100%;
+    text-align: center;
+}
+.content {
+    width: 1200px;
+    margin: auto;
+}
+/* --------------header------------- */
+.header {
+    height: 409px;
+    background: url(../images/bg.png)no-repeat center top;
+    background-size: contain;
+    overflow: hidden;
+}
+h2 {
+    font-size: 30px;
+    margin: 60px auto 47px;
+    font-weight: 549;
+}
+.h21 {
+    width: 100%;
+    text-align: center;
+}
+.header .nav {
+    width: 1200px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:120px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0 #e2e3e5;
+}
+.nav ul {
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav ul li {
+    list-style: none;
+    width: 100px;
+    height: 130px;
+    padding-top: 30px;
+}
+.nav ul li:nth-child(1) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon1.png);
+    background-size: contain;
+}
+.nav ul li .p1 {
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 14px;
+}
+.nav ul li .p2 {
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    margin-top: 8px;
+    display: none;
+}
+.nav ul li:nth-child(2) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon2.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(3) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon3.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(4) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon5.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(5) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon6.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(6) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon7.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(7) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon8.png);
+    background-size: contain;
+}
+.nav ul li:nth-child(8) span {
+    display: block;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: url(../images/icon9.png);
+    background-size: contain;
+}
+.nav ul li:hover div{
+    padding: 32px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background:  #f83244;
+    margin-top: -30px;
+}
+.nav ul li:hover .p2 {
+    display: block;
+}
+.nav ul li:hover .sp1 {
+    background-image: url(../images/icon1-2.png);
+}
+.nav ul li:hover .sp2 {
+    background-image: url(../images/icon2-2.png);
+}
+.nav ul li:hover .sp3 {
+    background-image: url(../images/icon3-2.png);
+}
+.nav ul li:hover .sp4 {
+    background-image: url(../images/icon5-2.png);
+}
+.nav ul li:hover .sp5 {
+    background-image: url(../images/icon6-2.png);
+}
+.nav ul li:hover .sp6 {
+    background-image: url(../images/icon7-2.png);
+}
+.nav ul li:hover .sp7 {
+    background-image: url(../images/icon8-2.png);
+}
+.nav ul li:hover .sp8 {
+    background-image: url(../images/icon9-2.png);
+}
+/* -----------------header---------------- */
+.main1 {
+    padding-bottom: 80px;
+}
+.main1-1 {
+    height: 247px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.main1-1 .cs {
+    width: 224px;
+    height: 220px;
+    box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+.cs dd {
+    text-align: left;
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+}
+.cs div {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+    background: url(../images/jiantou1.png)no-repeat center center ,#f83244;
+}
+.cs:hover div {
+    display: block;
+}
+.cs:hover dt {
+    opacity: 0.8;
+}
+.main1-2 {
+   width: 100%;
+   height: 16px;
+   margin-top: 13px;
+}
+.main1-2 li {
+    list-style: none;
+    font-size: 14px;
+    padding-left: 20px;
+    height: 16px;
+    float: left;
+    line-height: 16px;
+}
+.main1-2 li:nth-child(1) {
+    border-left: 1px solid ;
+}
+.main1-2-zuo p{
+    height: 16px;
+    float: left;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.main1-2-zuo span:nth-child(2) {
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+.main1-2-zuo span:nth-child(1) {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url(../images/main2.png);
+    background-size: contain;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+/* main1 */
+/* main2 */
+.main2 {
+    padding-bottom: 80px;
+    background: #fbfbfb;
+    overflow: hidden;
+}
+.main2 ul {
+    width: 600px;
+    height: 16px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.main2 h2 {
+    font-size: 30px;
+    margin: 60px auto 28px;
+    font-weight: 549;
+}
+.main2 ul li {
+    list-style: none;
+    float: left;
+    color: #333;
+}
+.main2 ul .li1::after {
+    content: "/";
+    color: #ccc;
+    padding: 0 10px;
+}
+.main2-1 {
+    height: 285px;
+    display: flex;
+    justify-content: space-around;
+}
+.main2-1 dl {
+    position: relative;
+}
+.main2-1 dl dt{
+    width: 285px;
+    height: 285px;
+}
+.main2-1 dl dd {
+    width: 231px;
+    height: 92px;
+    padding: 17px 0 0 22px;
+    position: absolute;
+    top: 231px;
+    left: 16px;
+    background: #fff;
+    box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.06);
+    transition: 0.2s all ease;
+}
+.main2-1 dl dd p {
+    font-size:24px;
+    height: 24px;
+    line-height: 24px;
+    text-align:left;
+
+}
+.main2 dl dd div {
+    width: 40px;
+    height: 2px;
+    margin-top: 13px;
+    border-bottom: 2px solid orangered;
+}
+.main2 .main2-1 ul li {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.main2-1 dd:hover {
+    top: 227px;
+}
+.main2-2 {
+    width: 160px;
+    height: 48px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 24px;
+    background: #f83244;
+    font-size: 16px;
+    color: #fff;
+    line-height: 48px;
+}
+.main2-2 img {
+    margin-left:10px;
+}
+
+
+
+
+
+
+

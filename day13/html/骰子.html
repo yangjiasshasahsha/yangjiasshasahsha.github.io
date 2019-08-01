@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 50px auto;
+            display: flex;
+            width: 900px;
+            height: 200px;
+            background: #fff;
+            justify-content: space-around;
+            border: 2px solid #ccc;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background: #e7e7e7;
+            border-radius: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+            box-shadow: 0px -5px 0px 0px #bbb inset, 5px 0px 0px 0px #d7d7d7 inset, -5px 0px 0px 0px #d7d7d7 inset;
+        }
+
+        ul li span {
+            width: 24px;
+            height: 24px;
+            background: #000;
+            border-radius: 12px;
+            box-shadow: 0 -2px 0 1px #555555 inset;
+        }
+
+        ul li:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li:nth-child(2) span:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        ul li:nth-child(3) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li:nth-child(3) span:nth-child(2) {
+            align-self: center;
+        }
+
+        ul li:nth-child(3) span:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        ul li:nth-child(4) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        div {
+            width: 90px;
+            height: 26px;
+        }
+
+        ul li:nth-child(4) div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li:nth-child(5) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        ul li:nth-child(5) div:nth-child(2n-1) {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        ul li:nth-child(5) div:nth-child(2n) {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li:nth-child(6) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        ul li:nth-child(6) div:nth-child(n) {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
