@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+@function vw($px) {
+    @return ($px/750)*100vw;
+}
+
+#elm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .elm-main {
+        flex: 1;
+        overflow: auto;
+        background: #f5f5f5;
+
+        .header {
+            height: vw(320);
+            display: flex;
+            background: #fff;
+
+            .left {
+                flex: 1;
+                background: orange;
+                background: url(../images/left1.png)no-repeat right bottom;
+                background-size: vw(165) vw(156);
+                border-right: vw(1) solid #ccc;
+                border-bottom: vw(1) solid #ccc;
+
+                p:nth-child(1) {
+                    font-size: vw(28);
+                    line-height: vw(28);
+                    color: #ffa300;
+                    margin: vw(50) 0 0 vw(34);
+                }
+
+                p:nth-child(2) {
+                    font-size: vw(22);
+                    line-height: vw(22);
+                    margin: vw(22) 0 0 vw(34);
+                    color: #979797;
+                }
+            }
+
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .top {
+                    flex: 1;
+                    background: url(../images/hongbao1.webp)no-repeat vw(260) vw(40);
+                    background-size: vw(85) vw(85);
+                    border-bottom: vw(1) solid #ccc;
+
+                    p:nth-child(1) {
+                        font-size: vw(30);
+                        line-height: vw(30);
+                        color: #20a9cd;
+                        margin: vw(47) 0 0 vw(30);
+                    }
+
+                    p:nth-child(2) {
+                        font-size: vw(22);
+                        line-height: vw(22);
+                        margin: vw(20) 0 0 vw(30);
+                        color: #979797;
+                    }
+                }
+
+                .bottom {
+                    flex: 1;
+                    background: url(../images/hongbao.webp)no-repeat vw(260) vw(40);
+                    background-size: vw(85) vw(85);
+                    border-bottom: vw(1) solid #ccc;
+
+                    p:nth-child(1) {
+                        font-size: vw(30);
+                        line-height: vw(30);
+                        color: #f6636d;
+                        margin: vw(47) 0 0 vw(30);
+                    }
+
+                    p:nth-child(2) {
+                        font-size: vw(22);
+                        line-height: vw(22);
+                        margin: vw(20) 0 0 vw(30);
+                        color: #979797;
+                    }
+                }
+            }
+        }
+
+        .main {
+            .tou {
+                height: vw(134);
+                background: url(../images/tou1.png) no-repeat center center, #fff;
+                background-size: vw(279) vw(44);
+                overflow: hidden;
+                margin-top: vw(20);
+
+                p {
+                    font-size: vw(20);
+                    line-height: vw(20);
+                    color: #ccc;
+                    margin-top: vw(88);
+                    text-align: center;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background: #fff;
+
+                li {
+                    width: vw(345);
+                    height: vw(530);
+
+                    img {
+                        width: vw(345);
+                        height: vw(345);
+                    }
+
+                    .list1 {
+                        width: vw(310);
+                        height: vw(120);
+                        overflow: hidden;
+                        margin: auto;
+                        border-bottom: 1px dashed #ccc;
+
+                        h3 {
+                            font-size: vw(28);
+                            line-height: vw(53);
+                        }
+
+                        p:nth-child(2) {
+                            font-size: vw(18);
+                            line-height: vw(18);
+                            color: #969696;
+
+                            span:nth-child(2) {
+                                margin-left: vw(20);
+                            }
+                        }
+
+                        p:nth-child(3) {
+                            span:nth-child(1) {
+                                font-size: vw(25);
+                                line-height: vw(25);
+                                margin-top: vw(10);
+                                color: #fe6310;
+                            }
+
+                            span:nth-child(2) {
+                                display: inline-block;
+                                width: vw(84);
+                                height: vw(24);
+                                border: 1px solid #b78390;
+                                border-radius: 2px;
+                                font-size: vw(18);
+                                line-height: vw(24);
+                                text-align: center;
+                                color: #b78390;
+                                margin-left: vw(10);
+                            }
+                        }
+                    }
+
+                    p {
+                        margin-left: vw(15);
+
+                        i {
+                            display: inline-block;
+                            width: vw(20);
+                            height: vw(20);
+                            background: url(../images/list1.png) no-repeat left center;
+                            background-size: vw(20) vw(20);
+                        }
+
+                        span {
+                            font-size: vw(20);
+                            line-height: vw(20);
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+
+            .span1 {
+                display: block;
+                font-size: vw(20);
+                line-height: vw(100);
+                text-align: center;
+                color: #ccc;
+                background: #fff;
+            }
+        }
+
+        .footer {
+            .tou {
+                height: vw(134);
+                background: url(../images/footer1.png) no-repeat center center, #fff;
+                background-size: vw(279) vw(44);
+                overflow: hidden;
+                margin-top: vw(20);
+
+                p {
+                    font-size: vw(20);
+                    line-height: vw(20);
+                    color: #ccc;
+                    margin-top: vw(88);
+                    text-align: center;
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                margin-top: vw(40);
+                background: #fff;
+
+                li {
+                    width: vw(240);
+                    height: vw(330);
+
+                    div {
+                        width: vw(98);
+                        height: vw(37);
+                        background: #433f3e;
+                        color: #fff;
+                        font-size: vw(22);
+                        line-height: vw(37);
+                        text-align: center;
+                    }
+
+                    img {
+                        width: vw(162);
+                        height: vw(66);
+                        margin: vw(38) 0 0 vw(40);
+                    }
+
+                    p:nth-child(3) {
+                        font-size: vw(22);
+                        line-height: vw(22);
+                        margin: vw(83) 0 0 vw(12);
+                    }
+
+                    p:nth-child(4) {
+                        font-size: vw(24);
+                        line-height: vw(24);
+                        color: #eb5c4b;
+                        margin: vw(30) 0 0 vw(12);
+
+                        span {
+                            font-size: vw(16);
+                            line-height: vw(24);
+                            margin-left: vw(10);
+                            color: #ccc;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: vw(106);
+
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                width: vw(40);
+                height: vw(64);
+
+                img {
+                    width: vw(37);
+                    height: vw(37);
+                }
+
+                p {
+                    font-size: vw(20);
+                    line-height: vw(20);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+#elm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        height: 2.533333rem;
+        background: url(../images/elm1.png) no-repeat, #01a1ff;
+        background-position: .373333rem .533333rem;
+        background-size: 4.146667rem .48rem;
+
+        input {
+            width: 9.28rem;
+            height: .986667rem;
+            text-align: center;
+            margin: 1.373333rem .373333rem;
+            outline: none;
+            border: none;
+        }
+    }
+
+    main {
+        flex: 1;
+
+        .ul1 {
+            width: 9.04rem;
+            margin: auto;
+            height: 4.666667rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+            li {
+                width: 1.2rem;
+                height: 1.333333rem;
+                margin-left: .666667rem;
+
+                img {
+                    width: 1.066667rem;
+                    height: .8rem;
+                }
+
+                p {
+                    font-size: .293333rem;
+                    line-height: .293333rem;
+                    margin-top: .333333rem;
+                    text-align: center;
+                }
+            }
+
+            li:nth-child(1) {
+                margin-left: 0px;
+            }
+
+            li:nth-child(6) {
+                margin-left: 0px;
+            }
+        }
+
+        .m1-1 {
+            width: 9.466667rem;
+            height: 2.933333rem;
+            margin: auto;
+            background: url(../images/3_32.png) no-repeat right center, #f7f7f7;
+            background-size: 3.626667rem 2.92rem;
+            overflow: hidden;
+
+            p:nth-child(1) {
+                font-size: .4rem;
+                line-height: .4rem;
+                margin: .4rem 0 0 .4rem;
+                font-weight: bold;
+            }
+
+            p:nth-child(2) {
+                font-size: .32rem;
+                line-height: .32rem;
+                margin: .266667rem 0 0 .4rem;
+                color: #ccc;
+            }
+
+            p:nth-child(3) {
+                font-size: .293333rem;
+                line-height: .293333rem;
+                margin: .333333rem 0 0 .4rem;
+                color: #af8462;
+            }
+        }
+
+        .m1-2 {
+            width: 9.466667rem;
+            height: 1.066667rem;
+            margin: .066667rem auto;
+            background: #af8462;
+
+            p {
+                display: inline-block;
+                height: 1.066667rem;
+                width: 100%;
+                line-height: .333333rem;
+                background: url(../images/3_36.png) no-repeat .373333rem center;
+                background-size: .506667rem .453333rem;
+
+                img {
+                    width: .506667rem;
+                    height: .453333rem;
+                }
+
+                span:nth-child(1) {
+                    font-size: .333333rem;
+                    line-height: 1.066667rem;
+                    margin-left: 1.066667rem;
+                }
+
+                span:nth-child(2) {
+                    font-size: .266667rem;
+                    line-height: 1.066667rem;
+                }
+
+                span:nth-child(3) {
+                    font-size: .266667rem;
+                    line-height: 1.066667rem;
+                    float: right;
+                }
+            }
+        }
+
+        .m1-3 {
+            width: 9.466667rem;
+            height: 2.32rem;
+            margin: .066667rem auto;
+            background: url(../images/3_40.png) no-repeat right center, #0886ff;
+            background-size: 2.84rem 2.32rem;
+            overflow: hidden;
+
+            h3 {
+                margin: .493333rem 0 0 1.333333rem;
+                font-size: .453333rem;
+                line-height: .453333rem;
+                color: #fff;
+            }
+
+            span {
+                display: block;
+                width: 3.28rem;
+                height: .426667rem;
+                border-radius: .213333rem;
+                margin: .24rem 0 0 1.813333rem;
+                font-size: .293333rem;
+                line-height: .426667rem;
+                background: #cfe7ff;
+                text-align: center;
+
+            }
+        }
+    }
+}
