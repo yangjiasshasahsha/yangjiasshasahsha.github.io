@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100%;
+            background: #000;
+        }
+
+        @keyframes xz {
+            0% {
+                transform: rotate3d(1, 0, 1, 0deg);
+            }
+
+            12.5% {
+                transform: rotate3d(0, 1, 1, 45deg);
+            }
+
+            25% {
+                transform: rotate3d(1, 0, 1, 90deg);
+            }
+
+            37.5% {
+                transform: rotate3d(0, 1, 1, 135deg);
+            }
+
+            50% {
+                transform: rotate3d(1, 0, 1, 180deg);
+            }
+
+            62.5% {
+                transform: rotate3d(0, 1, 1, 225deg);
+            }
+
+            75% {
+                transform: rotate3d(1, 0, 1, 270deg);
+            }
+
+            87.5% {
+                transform: rotate3d(0, 1, 1, 315deg);
+            }
+
+            100% {
+                transform: rotate3d(1, 0, 1, 360deg);
+            }
+        }
+
+        @keyframes qiu {
+            0% {
+                transform: rotate3d(1, 0, 1, 0deg);
+            }
+
+            12.5% {
+                transform: rotate3d(0, 1, 1, 45deg);
+            }
+
+            25% {
+                transform: rotate3d(1, 0, 1, 90deg);
+            }
+
+            37.5% {
+                transform: rotate3d(0, 1, 1, 135deg);
+            }
+
+            50% {
+                transform: rotate3d(1, 0, 1, 180deg);
+            }
+
+            62.5% {
+                transform: rotate3d(0, 1, 1, 225deg);
+            }
+
+            75% {
+                transform: rotate3d(1, 0, 1, 270deg);
+            }
+
+            87.5% {
+                transform: rotate3d(0, 1, 1, 315deg);
+            }
+
+            100% {
+                transform: rotate3d(1, 0, 1, 360deg);
+            }
+        }
+
+        .zft {
+            width: 200px;
+            height: 200px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto 700px;
+            position: absolute;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, 1, 0, 90deg);
+            animation: xz 10s infinite alternate;
+        }
+
+        .zft-1 {
+            width: 200px;
+            height: 200px;
+            color: #ccc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(0, 0, 200px);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft-2 {
+            width: 200px;
+            height: 200px;
+            color: #58a;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(-100px, 0, 100px) rotate3d(0, 1, 0, 90deg);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft-3 {
+            width: 200px;
+            height: 200px;
+            color: #58bc58;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(0, -100px, 100px) rotate3d(1, 0, 0, 90deg);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft-4 {
+            width: 200px;
+            height: 200px;
+            color: orange;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(0, 100px, 100px) rotate3d(1, 0, 0, 90deg);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft-5 {
+            width: 200px;
+            height: 200px;
+            color: pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(100px, 0, 100px) rotate3d(0, 1, 0, 90deg);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft-6 {
+            width: 200px;
+            height: 200px;
+            color: saddlebrown;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10vh 5vh inset currentColor;
+            box-shadow: 0 0 5vh 0 currentColor;
+        }
+
+        .zft:hover .zft-1,
+        .zft:hover .zft-2,
+        .zft:hover .zft-3,
+        .zft:hover .zft-4,
+        .zft:hover .zft-5,
+        .zft:hover .zft-6 {
+            background: currentColor;
+            box-shadow: 0 10px 50px 0 currentColor;
+        }
+
+        ul {
+            width: 200px;
+            height: 200px;
+            list-style: none;
+            animation: qiu 10s infinite linear;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        ul:hover li {
+            background: linear-gradient(white, currentColor);
+        }
+
+        li {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        li:nth-child(1) {
+            transform: rotateY(45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: pink;
+        }
+
+        li:nth-child(2) {
+            transform: rotateY(45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: yellow;
+        }
+
+        li:nth-child(3) {
+            transform: rotateY(90deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: red;
+        }
+
+        li:nth-child(4) {
+            transform: rotateY(135deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: orangered;
+        }
+
+        li:nth-child(5) {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: blue;
+        }
+
+        li:nth-child(6) {
+            transform: rotateY(225deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: blueviolet;
+        }
+
+        li:nth-child(7) {
+            transform: rotateY(270deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: green;
+        }
+
+        li:nth-child(8) {
+            transform: rotateY(315deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 0 currentColor;
+            color: white;
+        }
+
+        .qiu {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            color: #fff;
+            box-shadow: 0 0 10px 5px inset currentColor;
+            animation: zz 3s infinite ease alternate;
+            transform-style: preserve-3d;
+            position: absolute;
+            margin: 250px 100px;
+        }
+
+        @keyframes zz {
+            0% {
+                transform: rotateY(0);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .g {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #58a;
+            animation: g 2s infinite ease alternate;
+            box-shadow: 0 0 1vh 0 currentColor;
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+
+        @keyframes g {
+            0% {
+                position: absolute;
+                top: 0;
+                left: 50%;
+            }
+
+            25% {
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            50% {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+            }
+
+            75% {
+                position: absolute;
+                top: 50%;
+                left: 100%;
+            }
+
+            100% {
+                position: absolute;
+                top: 0;
+                left: 50%;
+            }
+        }
+
+        .t {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #58a;
+            animation: t 2.5s infinite ease alternate;
+            box-shadow: 0 0 1vh 0 currentColor;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+        }
+
+        @keyframes t {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(-50px, -100px);
+            }
+
+            50% {
+                transform: translate(0, -200px);
+            }
+
+            75% {
+                transform: translate(50px, -100px);
+            }
+
+            100% {
+                transform: translate(0, 0) rotateY(360deg);
+            }
+        }
+
+        .a {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            animation: a 1s infinite linear alternate;
+            box-shadow: 0 0 1vh 0 currentColor;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transform-style: preserve-3d;
+        }
+
+        @keyframes a {
+            0% {
+                transform-origin: 0 105px;
+                transform: rotateZ(0);
+            }
+
+            25% {
+                transform-origin: 0 105px;
+                transform: rotateZ(90deg);
+            }
+
+            50% {
+                transform-origin: 0 105px;
+                transform: rotateZ(180deg);
+            }
+
+            75% {
+                transform-origin: 0 105px;
+                transform: rotateZ(270deg);
+            }
+
+            100% {
+                transform-origin: 0 105px;
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zft">
+        <div class="zft-1">1</div>
+        <div class="zft-2">2</div>
+        <div class="zft-3">3</div>
+        <div class="zft-4">4</div>
+        <div class="zft-5">5</div>
+        <div class="zft-6">6</div>
+
+    </div>
+    <div class="qiu">
+        <ul>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+            <li>
+                <div class="g"></div>
+                <div class="t"></div>
+                <div class="a"></div>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
