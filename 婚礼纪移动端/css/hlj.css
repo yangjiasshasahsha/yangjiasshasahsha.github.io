@@ -22,7 +22,6 @@ ul {
 }
 
 #hlj {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -141,7 +140,8 @@ ul {
 #hlj main .m1 {
   width: 95%;
   display: flex;
-  margin: 8vw auto;
+  margin-top: 5.33333vw;
+  padding-left: 4.26667vw;
   justify-content: space-between;
 }
 
@@ -187,7 +187,8 @@ ul {
 
 #hlj main .m2 {
   width: 95%;
-  margin: auto;
+  margin-top: 5.33333vw;
+  padding-left: 4.26667vw;
   margin-top: 9.6vw;
 }
 
@@ -256,7 +257,8 @@ ul {
 
 #hlj main .m3 {
   width: 95%;
-  margin: 8vw auto 0;
+  margin-top: 5.33333vw;
+  padding-left: 4.26667vw;
   height: 51.46667vw;
 }
 
