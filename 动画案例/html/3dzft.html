@@ -14,7 +14,8 @@
 
         body {
             height: 100%;
-            background: #000;
+            background: url(../images/timg.gif);
+            background-size: cover;
         }
 
         @keyframes xz {
@@ -96,11 +97,7 @@
         .zft {
             width: 200px;
             height: 200px;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto 700px;
+            margin: 150px 150px;
             position: absolute;
             transform-style: preserve-3d;
             transform: rotate3d(1, 1, 0, 90deg);
@@ -206,7 +203,7 @@
             box-shadow: 0 10px 50px 0 currentColor;
         }
 
-        ul {
+        .qiu ul {
             width: 200px;
             height: 200px;
             list-style: none;
@@ -220,17 +217,17 @@
             margin: auto;
         }
 
-        ul:hover li {
+        .qiu ul:hover li {
             background: linear-gradient(white, currentColor);
         }
 
-        li {
+        .qiu li {
             width: 200px;
             height: 200px;
             border-radius: 50%;
         }
 
-        li:nth-child(1) {
+        .qiu li:nth-child(1) {
             transform: rotateY(45deg);
             position: absolute;
             top: 0;
@@ -240,7 +237,7 @@
             color: pink;
         }
 
-        li:nth-child(2) {
+        .qiu li:nth-child(2) {
             transform: rotateY(45deg);
             position: absolute;
             top: 0;
@@ -250,7 +247,7 @@
             color: yellow;
         }
 
-        li:nth-child(3) {
+        .qiu li:nth-child(3) {
             transform: rotateY(90deg);
             position: absolute;
             top: 0;
@@ -260,7 +257,7 @@
             color: red;
         }
 
-        li:nth-child(4) {
+        .qiu li:nth-child(4) {
             transform: rotateY(135deg);
             position: absolute;
             top: 0;
@@ -270,7 +267,7 @@
             color: orangered;
         }
 
-        li:nth-child(5) {
+        .qiu li:nth-child(5) {
             transform: rotateY(180deg);
             position: absolute;
             top: 0;
@@ -280,7 +277,7 @@
             color: blue;
         }
 
-        li:nth-child(6) {
+        .qiu li:nth-child(6) {
             transform: rotateY(225deg);
             position: absolute;
             top: 0;
@@ -290,7 +287,7 @@
             color: blueviolet;
         }
 
-        li:nth-child(7) {
+        .qiu li:nth-child(7) {
             transform: rotateY(270deg);
             position: absolute;
             top: 0;
@@ -300,7 +297,7 @@
             color: green;
         }
 
-        li:nth-child(8) {
+        .qiu li:nth-child(8) {
             transform: rotateY(315deg);
             position: absolute;
             top: 0;
@@ -319,7 +316,7 @@
             animation: zz 3s infinite ease alternate;
             transform-style: preserve-3d;
             position: absolute;
-            margin: 250px 100px;
+            margin: 600px 100px;
         }
 
         @keyframes zz {
@@ -450,6 +447,123 @@
                 transform: rotateZ(360deg);
             }
         }
+
+        .yuz {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, 1, 1, -60deg);
+            box-shadow: 0 0 10vh 0 #fff;
+            box-shadow: 0 0 10vh 0 #fff inset;
+            position: relative;
+        }
+
+        @keyframes yuz {
+            0% {
+                transform-origin: 0 300px 0;
+                transform: rotateZ(0);
+            }
+
+            50% {
+                transform-origin: 0 300px 0;
+                transform: rotateZ(180deg);
+            }
+
+            100% {
+                transform-origin: 0 300px 0;
+                transform: rotateZ(360deg);
+            }
+        }
+
+        @keyframes li {
+            0% {
+                transform: rotateY(0);
+            }
+
+            12.5% {
+                transform: rotateY(45deg);
+            }
+
+            25% {
+                transform: rotateY(90deg);
+            }
+
+            37.5% {
+                transform: rotateY(135deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            62.5% {
+                transform: rotateY(225deg);
+            }
+
+            75% {
+                transform: rotateY(270deg);
+            }
+
+            87.5% {
+                transform: rotateY(315deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .yuz ul {
+            width: 100px;
+            height: 100px;
+            list-style: none;
+            animation: yuz 2s infinite linear;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .yuz li {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: li .05s infinite linear;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 20px currentColor;
+            color: rgb(206, 24, 24);
+            background: red;
+        }
+
+        .xx {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, 1, 1, 255deg);
+            box-shadow: 0 0 10vh 0 #fff;
+            box-shadow: 0 0 10vh 0 #fff inset;
+            position: relative;
+        }
+
+        .xx div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: li .05s infinite linear;
+            box-shadow: 0 0 5px 5px inset currentColor;
+            box-shadow: 0 0 3vh 50px currentColor;
+            color: blue;
+            background: currentColor;
+            position: absolute;
+            top: 33%;
+            left: 37%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
@@ -507,6 +621,17 @@
             </li>
         </ul>
 
+    </div>
+    <div class="yuz">
+        <ul>
+            <li></li>
+        </ul>
+        <div class="xx">
+            <div></div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
     </div>
 </body>
 
