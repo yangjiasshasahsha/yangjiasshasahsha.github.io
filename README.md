@@ -1,4 +1,6 @@
 <h2>day17作业</h2>
+<a href="https://yangjiasshasahsha.github.io/%E5%8A%A8%E7%94%BB%E6%A1%88%E4%BE%8B/html/qiu.html">day17嘻嘻</a>
+
 <a href="https://yangjiasshasahsha.github.io/%E5%8A%A8%E7%94%BB%E6%A1%88%E4%BE%8B/html/3dzft.html">day17动画</a>
 <h2>day16作业</h2>
 <a href="https://yangjiasshasahsha.github.io/%E5%A9%9A%E7%A4%BC%E7%BA%AA%E7%A7%BB%E5%8A%A8%E7%AB%AF/html/hlj.html">day16婚礼纪移动端</a>
