@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 1000px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            background: pink;
+            border-radius: 50px;
+        }
+
+        #btn {
+            width: 150px;
+            height: 40px;
+            border-radius: 7px;
+            background: red;
+            border: 2px solid rebeccapurple;
+            margin-top: 20px;
+        }
+
+        #box {
+            width: 800px;
+            height: 0px;
+            margin: auto;
+            background: url(images/1.png);
+            transition: all .5s;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            color: pink;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <input type="button" id="btn" value="点击一下有惊喜">
+        <div id="box">
+            <p>好闺蜜，生日快乐！</p>
+            <p>祝你八月的考试顺利通过！</p>
+            <p>一定要爱着点什么，恰似草木对光阴的钟情！</p>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.getElementById('btn');
+    var box = document.getElementById('box');
+    btn.onclick = function () {
+        box.style.height = '490px';
+    }
+</script>
+
+</html>
