@@ -1,3 +1,6 @@
+<h2>第二阶段项目</h2>
+<a href="https://yangjiasshasahsha.github.io/第二阶段项目/index1.html">百洋商城</a>
+
 <h2>day17作业</h2>
 <a href="https://yangjiasshasahsha.github.io/%E5%8A%A8%E7%94%BB%E6%A1%88%E4%BE%8B/html/qiu.html">day17嘻嘻</a>
 
