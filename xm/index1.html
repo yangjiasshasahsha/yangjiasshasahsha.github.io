@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百洋健康</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/shouye.min.css">
+    <link rel="stylesheet" href="header/head.css">
+    <link rel="stylesheet" href="foot/foot.css">
+    <link rel="stylesheet" href="side column/celan.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <style>
+        /* 轮播图1 */
+        #lbt1 {
+            width: 100%;
+            height: 440px;
+        }
+
+        .lbt1-prev {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            left: 320px;
+            display: none;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABKklEQVRYhe3YMW7DIBQG4OdzRL1CEqlXcBJ3MQsewGfO1KZqE6dJT2DpIVidBSSLCTDGisLwSwygTw+96QcAKADgDQDWAPA+c9baKkAf5gbtrAAANgvAG1gANclwhjOc4VeFGWOVlLJDxK9kMGOsUkrdh2EYEPGUBOacHwwqhDgTQsrZ4TEqpbx4oOGwRm8a7TzRMJhSup+I+sMWeg1E/eCIqDus0T+D1nW9m4C6wU3T7AyqlIqBusGI+B0ZdYY/Nfzftu1HMpgQUgohfg3OGKuSwCP8HBF3v2zh94m43wNCSCmlvBicc35IAkfEw75K453GbwF4+ILYOKV0nwQe4dcAfBps44j4kww2OCKe+r4/JoUDkuEMZzjDTwgvVqIuVhubojzF5FttFQ8UEzgb+KGepQAAAABJRU5ErkJggg==);
+        }
+
+        .lbt1-next {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            right: 320px;
+            display: none;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABGklEQVRYhe3Yv2rDMBAG8M/PUfIKSaGvECedpEWL9c6d0pTSOE36BIYz0uouZwie9M8SLRo+uOGOHxI3HQA0ADYAtgBeVs6WrQZcrA0u8wQAuwLwDgXQORWucIUr/B/hYRjeiOgshGizwkT0OU3TZIy5Sin32WCl1MFae0uMuzVqrY+Jcfdmxu+M95G430BC3H9ogV8C8bCv6rrudcbHcfwKwMMXhPGfQDwcjsTj4CVORO/ZYCFEa629MvyRBX5ErbXfSqnD6rAQojXGhKDhsJRy/4DePNEwOAHqDzPaR6J+8BLVWh8jdqQI6gYzemH0ngB1g4nonBh1hk/GmD4h6rdciVPhCle4wn8QLnZELXY2ng/lOV7+zFbzC/p/ODLtDILvAAAAAElFTkSuQmCC);
+        }
+
+        .lbt1-active {
+            background: #fff;
+            opacity: 1;
+        }
+
+
+        /* 轮播图2 */
+        #lbt2 {
+            width: 100%;
+            height: 380px;
+        }
+
+        #lbt2 img {
+            width: 220;
+            height: 220px;
+        }
+
+        .lbt2-active {
+            background: #EF3C79;
+            opacity: 1;
+        }
+
+        /* 轮播图3 */
+        #lbt3 {
+            width: 100%;
+            height: 380px;
+        }
+
+        #lbt3 img {
+            width: 220px;
+            height: 220px;
+        }
+
+        .lbt3-titel {
+            font-size: 13px;
+            font-weight: 400;
+            height: 36px;
+            margin-top: 40px;
+            overflow: hidden;
+        }
+
+        .lbt3-mey {
+            margin-top: 5px;
+        }
+
+        .lbt3-mey span:nth-child(1) {
+            font-size: 14px;
+            color: #ef3c79;
+            font-weight: 600;
+        }
+
+        .lbt3-mey span:nth-child(2) {
+            font-size: 12px;
+            color: #999;
+            margin-left: 5px;
+            text-decoration: line-through;
+        }
+
+        .lbt3-prev {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            left: 0px;
+            top: 145px;
+            display: none;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABKklEQVRYhe3YMW7DIBQG4OdzRL1CEqlXcBJ3MQsewGfO1KZqE6dJT2DpIVidBSSLCTDGisLwSwygTw+96QcAKADgDQDWAPA+c9baKkAf5gbtrAAANgvAG1gANclwhjOc4VeFGWOVlLJDxK9kMGOsUkrdh2EYEPGUBOacHwwqhDgTQsrZ4TEqpbx4oOGwRm8a7TzRMJhSup+I+sMWeg1E/eCIqDus0T+D1nW9m4C6wU3T7AyqlIqBusGI+B0ZdYY/Nfzftu1HMpgQUgohfg3OGKuSwCP8HBF3v2zh94m43wNCSCmlvBicc35IAkfEw75K453GbwF4+ILYOKV0nwQe4dcAfBps44j4kww2OCKe+r4/JoUDkuEMZzjDTwgvVqIuVhubojzF5FttFQ8UEzgb+KGepQAAAABJRU5ErkJggg==);
+        }
+
+        .lbt3-next {
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            right: 0px;
+            top: 145px;
+            display: none;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABGklEQVRYhe3Yv2rDMBAG8M/PUfIKSaGvECedpEWL9c6d0pTSOE36BIYz0uouZwie9M8SLRo+uOGOHxI3HQA0ADYAtgBeVs6WrQZcrA0u8wQAuwLwDgXQORWucIUr/B/hYRjeiOgshGizwkT0OU3TZIy5Sin32WCl1MFae0uMuzVqrY+Jcfdmxu+M95G430BC3H9ogV8C8bCv6rrudcbHcfwKwMMXhPGfQDwcjsTj4CVORO/ZYCFEa629MvyRBX5ErbXfSqnD6rAQojXGhKDhsJRy/4DePNEwOAHqDzPaR6J+8BLVWh8jdqQI6gYzemH0ngB1g4nonBh1hk/GmD4h6rdciVPhCle4wn8QLnZELXY2ng/lOV7+zFbzC/p/ODLtDILvAAAAAElFTkSuQmCC);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="header/head.js"></script>
+    <!-- 轮播图1 -->
+    <div class="swiper-container" id="lbt1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide " style="background: lavender;">
+                <img src="images/lbu1-1.jpg" alt="" class="lbt1">
+            </div>
+            <div class="swiper-slide" style="background: lavenderblush;">
+                <img src="images/lbu1-2.jpg" alt="" class="lbt1">
+            </div>
+            <div class="swiper-slide" style="background: lawngreen;">
+                <img src="images/lbu1-3.jpg" alt="" class="lbt1">
+            </div>
+        </div>
+        <!--按钮-->
+        <div class="swiper-button-prev lbt1-prev"></div>
+        <div class="swiper-button-next lbt1-next"></div>
+        <!--分页-->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="main1">
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="images/main1-img1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/main1-img2.jpg" alt="">
+                </li>
+                <li id="list">
+                    <img src="images/main1-img3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/main1-img4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图2 -->
+    <div id="main2">
+        <div class="content">
+            <h2>热销榜单 <span>千万妈妈 精选超值好货</span></h2>
+            <div class="swiper-container" id="lbt2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/f6.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">肌肤澎湃水润</p>
+                        <p class="lbt2-mey">¥159.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f7.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">刷屏不伤眼</p>
+                        <p class="lbt2-mey">¥89.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f8.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">西班牙皇家庄园级橄榄油</p>
+                        <p class="lbt2-mey">¥99.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f9.jpeg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">抚平岁月痕迹</p>
+                        <p class="lbt2-mey">¥1380.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f10.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">吃出粉嫩美肌</p>
+                        <p class="lbt2-mey">¥359.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f1.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">促钙成骨</p>
+                        <p class="lbt2-mey">¥279.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f2.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">关节守护神</p>
+                        <p class="lbt2-mey">¥368.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f3.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">防晒界杠把子</p>
+                        <p class="lbt2-mey">¥239.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f4.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">逆龄黑科技</p>
+                        <p class="lbt2-mey">¥238.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f5.jpg" alt="" class="lbt2-img">
+                        <p class="lbt2-titel">敏感肌适用</p>
+                        <p class="lbt2-mey">¥228.00</p>
+                        <div class="lbt2-buy">
+                            立即购买
+                        </div>
+                    </div>
+
+                </div>
+                <!--分页-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main3" class="main">
+        <div class="content">
+            <h2>
+                孝敬爸妈
+                <p>
+                    <span>骨骼健康</span>
+                    <span>三高调节</span>
+                    <span>改善睡眠</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main3-imgtop">
+                <img src="images/main3-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main3-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main3-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main3-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main3-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main3-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main4" class="main">
+        <div class="content">
+            <h2>
+                医美护肤
+                <p>
+                    <span>面部护理</span>
+                    <span>护肤套餐</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main4-imgtop">
+                <img src="images/main4-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main4-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main4-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main4-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main4-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main4-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main5" class="main">
+        <div class="content">
+            <h2>
+                女士保健
+                <p>
+                    <span>美容养颜</span>
+                    <span>胶原蛋白</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main5-imgtop">
+                <img src="images/main5-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main5-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main5-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main5-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main5-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main5-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main6" class="main">
+        <div class="content">
+            <h2>
+                孕妈必备
+                <p>
+                    <span>孕期营养</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main6-imgtop">
+                <img src="images/main6-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main6-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main6-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main6-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main6-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main6-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main7" class="main">
+        <div class="content">
+            <h2>
+                增强免疫力
+                <p>
+                    <span>肠胃健康</span>
+                    <span>提高免疫</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main7-imgtop">
+                <img src="images/main7-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main7-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main7-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main7-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main7-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main7-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main8" class="main">
+        <div class="content">
+            <h2>
+                日用清洁
+                <p>
+                    <span>驱蚊祛味</span>
+                    <span>清新空气</span>
+                    <span>果蔬清洁</span>
+                    <span>生活家电</span>
+                    <span> 查看更多 ></span>
+                </p>
+            </h2>
+            <div class="main8-imgtop">
+                <img src="images/main8-img.jpg">
+            </div>
+            <ul>
+                <li>
+                    <img src="images/main8-img1.jpg">
+                </li>
+                <li>
+                    <img src="images/main8-img2.jpg">
+                </li>
+                <li>
+                    <img src="images/main8-img3.jpg">
+                </li>
+                <li>
+                    <img src="images/main8-img4.jpg">
+                </li>
+                <li>
+                    <img src="images/main8-img5.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图3 -->
+    <div id="main9">
+        <div class="content">
+            <h2>
+                为你推荐
+                <span>
+                    根据浏览记录推荐的商品
+                </span>
+            </h2>
+            <div class="swiper-container" id="lbt3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-1.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【特惠10盒装】美国进口D-cal迪巧 小儿碳酸钙D3颗粒剂升级版 20袋/盒 添加K2金标迪巧</p>
+                        <p class="lbt3-mey">
+                            <span>￥790.00</span>
+                            <span>￥990.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-2.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【水果口味钙】迪巧 维D钙咀嚼片120片钙片 成人孕妇中老年补钙无糖</p>
+                        <p class="lbt3-mey">
+                            <span>￥88.00</span>
+                            <span>¥127.40</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-3.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">NOW 诺奥 褪黑素胶囊 3mg 60粒/瓶 改善睡眠安睡安神松果体</p>
+                        <p class="lbt3-mey">
+                            <span>￥68.00</span>
+                            <span>¥88.40</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-4.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【水果口味 小象造型钙片】迪巧 儿童维D钙咀嚼钙片 60片儿童青少年宝宝补钙</p>
+                        <p class="lbt3-mey">
+                            <span>￥84.49</span>
+                            <span>¥116.87</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-5.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【2瓶】美国进口纽特舒玛Nutrasumma阿拉斯加深海鱼油60粒 高血压高血脂三高人群中老年</p>
+                        <p class="lbt3-mey">
+                            <span>￥19.80</span>
+                            <span>¥516.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-6.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【补钙搭档3送1】迪巧小儿碳酸钙颗粒20袋*3盒 送纽特舒玛儿童维生素D3喷剂1瓶</p>
+                        <p class="lbt3-mey">
+                            <span>￥298.00</span>
+                            <span>¥446.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-7.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">日本进口资生堂安热沙/安耐晒ANESSA 防晒乳SPF50+ 新版小金瓶60ml防晒霜</p>
+                        <p class="lbt3-mey">
+                            <span>￥239.00</span>
+                            <span>¥299.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-8.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【逆龄黑科技】Quanis克奥妮斯玻尿酸微针眼贴1300针（6对装）淡化黑眼圈</p>
+                        <p class="lbt3-mey">
+                            <span>￥1380.00</span>
+                            <span>¥2568.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-9.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">NOW 诺奥 80亿益生菌粉胶囊 60粒/瓶调理肠胃肠道腹泻便秘</p>
+                        <p class="lbt3-mey">
+                            <span>￥158.00</span>
+                            <span>¥198.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-10.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【肌底修护面膜】MedSPA美帕壳聚糖修复面膜20g*6片</p>
+                        <p class="lbt3-mey">
+                            <span>￥309.00</span>
+                            <span>¥360.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-11.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【囤货3盒装】森田药妆 玻尿酸复合原液面膜10片装*3盒 补水亮肤 保湿淡化细纹</p>
+                        <p class="lbt3-mey">
+                            <span>￥249.00</span>
+                            <span>¥414.00</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lbu3-12.jpg" alt="" class="lbt2-img">
+                        <p class="lbt3-titel">【面膜界的“神仙水”】蔓百薇星蔓玻尿酸水光修复面膜5片/盒</p>
+                        <p class="lbt3-mey">
+                            <span>￥158.00</span>
+                            <span>¥252.00</span>
+                        </p>
+                    </div>
+                </div>
+                <!--按钮-->
+                <div class="swiper-button-prev lbt3-prev"></div>
+                <div class="swiper-button-next lbt3-next"></div>
+                <!--分页-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main10">
+        <div class="content">
+            <img src="images/main10-img.jpg" alt="" draggable="false">
+        </div>
+    </div>
+    <script src="foot/foot.js"></script>
+    <script src="side column/celan.js"></script>
+</body>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/com.js"></script>
+<script src="header/headjs.js"></script>
+<script src="side column/celanjs.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/shouye.js"></script>
+<script>
+    $(() => {
+        //轮播图1
+        let lbtone = new Swiper('#lbt1', {
+            speed: 1000,
+            autoplay: {//自动轮播
+                delay: 3000,//间隔时间
+                disableOnInteraction: false, //拖拽完后还能继续自动轮播
+            },
+            loop: true,//无缝 环路
+            navigation: {//上下按钮
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {//焦点跟随
+                el: '.swiper-pagination',
+                bulletActiveClass: 'lbt1-active',//自定义焦点的高亮颜色
+                clickable: true,//点击焦点跳到指定图片
+            },
+        });
+        $('#lbt1').mouseenter(() => {//按钮显示与隐藏
+            $('.lbt1-prev').css('display', 'block');
+            $('.lbt1-next').css('display', 'block');
+        })
+        $('#lbt1').mouseleave(() => {//按钮显示与隐藏
+            $('.lbt1-prev').css('display', 'none');
+            $('.lbt1-next').css('display', 'none');
+        })
+        //轮播图2
+        let lbtone2 = new Swiper('#lbt2', {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            loop: true,//无缝 环路
+            pagination: {//焦点跟随
+                el: '.swiper-pagination',
+                bulletActiveClass: 'lbt2-active',//自定义焦点的高亮颜色
+                clickable: true,//点击焦点跳到指定图片
+            },
+        });
+        $('#lbt2 .swiper-slide').mouseenter(function () {
+            $(this).find('.lbt2-img').css('margin-top', '0px');
+            $(this).find('.lbt2-titel').css('margin', '0');
+            $(this).find('.lbt2-buy').css('display', 'block');
+            $(this).css('border', '1px solid #e1e1e1');
+        })
+        $('#lbt2 .swiper-slide').mouseleave(function () {
+            $(this).find('.lbt2-img').css('margin-top', '10px');
+            $(this).find('.lbt2-titel').css('margin-top', '50px');
+            $(this).find('.lbt2-buy').css('display', 'none');
+            $(this).css('border', '1px solid #fff');
+        })
+        //轮播图3
+        let lbtone3 = new Swiper('#lbt3', {
+            speed: 1000,
+            autoplay: {//自动轮播
+                delay: 2000,//间隔时间
+                disableOnInteraction: false, //拖拽完后还能继续自动轮播
+            },
+            slidesPerView: 5,
+            slidesPerGroup: 1,
+            loop: true,//无缝 环路
+            navigation: {//上下按钮
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+        $('#lbt3').mouseenter(() => {//按钮显示与隐藏
+            $('.lbt3-prev').css('display', 'block');
+            $('.lbt3-next').css('display', 'block');
+        })
+        $('#lbt3').mouseleave(() => {//按钮显示与隐藏
+            $('.lbt3-prev').css('display', 'none');
+            $('.lbt3-next').css('display', 'none');
+        })
+        //模糊查询
+        let val = '';
+        $('.input-right').blur(function () {
+            val = $('.input-right').val();
+        })
+        //查询
+        $('.input-btn').click(function () {
+            let p = ` <p>${val}</p>`;
+            $('.chaxun-tx').append(p);
+            window.open('html/list.html?' + val);
+        })
+        //跳转列表业
+        $('#list').click(function () {
+            location.href = 'html/list.html';
+        })
+    });
+</script>
+<!-- 防止图片被鼠标拖动 -->
+<script language="javascript">
+    function imgdragstart() { return false; };
+    for (i in document.images) document.images[i].ondragstart = imgdragstart; 
+</script>
+
+</html>

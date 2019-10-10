@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tx::after {
+  content: '';
+  clear: both;
+  height: 0px;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.content {
+  width: 1200px;
+  margin: auto;
+}
+
+#main1 {
+  margin-top: 30px;
+}
+
+#main1 .content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main1 .content ul li:nth-child(3) {
+  cursor: pointer;
+}
+
+#main2 .content h2 {
+  margin: 60px 0 30px 0;
+  line-height: 30px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+}
+
+#main2 .content h2 span {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+#main2 .content #lbt2 .lbt2-titel {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 50px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+#main2 .content #lbt2 .lbt2-mey {
+  font-size: 14px;
+  color: #EF3C79;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main2 .content #lbt2 .lbt2-buy {
+  width: 240px;
+  background: #EF3C79;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  margin-top: 10px;
+  height: 50px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#main2 .content #lbt2 .lbt2-img {
+  transition: all .5s;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#main2 .content #lbt2 .swiper-wrapper {
+  height: 340px;
+}
+
+#main2 .content #lbt2 .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+
+.main .content h2 {
+  margin: 60px 0 20px 0;
+  line-height: 30px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+}
+
+.main .content h2 p {
+  float: right;
+  font-size: 14px;
+}
+
+.main .content h2 p span {
+  padding-right: 10px;
+  margin-left: 10px;
+  border-right: 1px solid #ccc;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main .content h2 p span:last-child {
+  border-right: none;
+}
+
+.main .content .main3-imgtop img,
+.main .content .main4-imgtop img,
+.main .content .main5-imgtop img,
+.main .content .main6-imgtop img,
+.main .content .main7-imgtop img,
+.main .content .main8-imgtop img {
+  cursor: pointer;
+}
+
+.main .content ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .content ul li img {
+  cursor: pointer;
+}
+
+#main9 .content h2 {
+  margin: 60px 0 20px 0;
+  line-height: 30px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+}
+
+#main9 .content h2 span {
+  font-size: 14px;
+  color: #666;
+  margin-left: 10px;
+}
+
+#main9 .content .swiper-slide {
+  cursor: pointer;
+}

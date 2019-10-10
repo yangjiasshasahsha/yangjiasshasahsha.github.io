@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/gwc.css">
+    <link rel="stylesheet" href="../header/head.css">
+    <link rel="stylesheet" href="../foot/foot.css">
+</head>
+
+<body>
+    <script src="../header/head.js"></script>
+    <div class="s-top">
+        <h3>我的购物车</h3>
+        <p>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</p>
+    </div>
+    <div id="shoppingCar">
+    </div>
+    <div class="s-list">
+        <div class="title">
+            猜你喜欢的宝贝
+        </div>
+        <ul>
+            <li>
+                <img src="https://shopncstaticimage.baiyangwang.com/shop/store/goods/7/7_05808362736571366.jpg!gthumb"
+                    alt="">
+                <p>【淡口味钙 不伤宝宝味蕾】迪巧钙维生素D颗粒小儿碳酸钙D3颗粒15袋 儿童补钙</p>
+                <p>￥69.80</p>
+            </li>
+            <li>
+                <img src="https://shopncstaticimage.baiyangwang.com/shop/store/goods/6/6_05791124784599183.jpg!gthumb"
+                    alt="">
+                <p>【润滑关节 改善关节炎】NOW 诺奥关节宝氨糖维骨力胶囊 90粒 软骨素</p>
+                <p>￥139.00</p>
+            </li>
+            <li>
+                <img src="https://shopncstaticimage.baiyangwang.com/shop/store/goods/7/7_05751360615211285.jpg!gthumb"
+                    alt="">
+                <p>【水果口味钙】迪巧 维D钙咀嚼片120片钙片 成人孕妇中老年补钙无糖</p>
+                <p>￥88.00</p>
+            </li>
+        </ul>
+    </div>
+    <script src="../foot/foot.js"></script>
+</body>
+<script src="../js/com.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/gwc.js"></script>
+<script src="../header/headjs.js"></script>
+<script>
+    (() => {
+        //模糊查询
+        let val = '';
+        $('.input-right').blur(function () {
+            val = $('.input-right').val();
+        })
+        //查询
+        $('.input-btn').click(function () {
+            let p = ` <p>${val}</p>`;
+            $('.chaxun-tx').append(p);
+            window.open('list.html?' + val);
+        })
+        //购物车功能
+        var gwc = document.getElementById('shoppingCar');
+        shoppingCar({
+            ele: gwc,
+        })
+        //足迹
+        let cookie = getcookie('username');
+        $.ajax({
+            type: 'get',
+            url: '../api/footprint/foot.php',
+            data: {
+                cookie
+            },
+            dataType: 'json',
+            success: str => {
+                let html = str.map(item => {
+                    return `<div><img src="${item.img}" alt=""></div>`
+                }).join('');
+                $('.my-zuji-list').html(html);
+            }
+        })
+        //小购物车
+        creatcarr();
+        function creatcarr() {
+            $.ajax({
+                type: 'get',
+                url: '../api/shoppingcar/car.php',
+                data: {
+                    cookie
+                },
+                dataType: 'json',
+                success: str => {
+                    //购物车商品个数
+                    $('.numcar').html(str.obj.length);
+                    //小购物车
+                    let meyall = 0;
+                    let html = str.obj.map(item => {
+                        meyall += item.num * item.price * 1;
+                        return `<li data-id="${item.id}">
+                <div>
+                    <img src="${item.img}" alt="">
+                </div>
+                <p>${item.name}</p>
+                <p><span>¥${item.price}</span>×<span>${item.num}</span></p>
+                <p class="headdel">删除</p>
+            </li>`
+                    }).join('');
+                    //渲染总数量以及总价格 
+                    $('.car-list').html(html);
+                    $('.headnumall').html(str.obj.length);
+                    $('.headmeyall').html('￥' + meyall.toFixed(2));
+                    //跳转购物车
+                    $('.car-foot div').click(function () {
+                        window.open('../html/gwc.html');
+                    })
+                    //删除商品
+                    $('.headdel').click(function () {
+                        let id = $(this.parentNode).attr('data-id');
+                        console.log(id);
+                        $.ajax({
+                            type: 'get',
+                            url: '../api/shoppingcar/del.php',
+                            data: {
+                                id,
+                            },
+                            success: str => {
+                                creatcarr();
+                            }
+                        })
+                    })
+                }
+
+            })
+        }
+    })();
+</script>
+
+</html>

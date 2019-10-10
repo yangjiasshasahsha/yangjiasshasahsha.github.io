@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+#zhuce-box {
+    width: 100%;
+    height: 680px;
+    background: url(../images/zhuce_bg.png);
+    overflow: hidden;
+}
+
+#zhuce {
+    background-color: #FFF;
+    display: block;
+    width: 820px;
+    height: 520px;
+    padding: 19px;
+    border: solid 1px #CCC;
+    overflow: hidden;
+    margin: 60px auto;
+    box-shadow: 0 0 0 10px #ccc;
+}
+
+.zhuceleft {
+    width: 600px;
+    height: 520px;
+    float: left;
+}
+
+.zhucehead {
+    font-size: 0;
+    border-bottom: solid 1px #E6E6E6;
+    text-align: center;
+    position: relative;
+}
+
+.zhucehead div {
+    width: 290px;
+    height: 40px;
+    font-size: 18px;
+    color: #EF3C79;
+    border-bottom: 3px solid #EF3C79;
+    margin: auto;
+}
+
+.zhucehead i {
+    display: inline-block;
+    position: absolute;
+    bottom: -16px;
+    margin: auto;
+    border: 8px solid transparent;
+    border-top-color: #F32613;
+}
+
+.zhucefoot div {
+    width: 400px;
+    height: 54px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+
+
+.zhucefoot {
+    padding: 50px 80px 0 100px;
+    position: relative;
+}
+
+.zhucefoot label {
+    font-size: 14px;
+    line-height: 54px;
+    color: #666;
+    width: 72px;
+    padding: 16px 30px 16px 20px;
+}
+
+#tel {
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+    height: 28px;
+    border: none 0;
+    outline: none;
+}
+
+#yzm {
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    border: none 0;
+    outline: none;
+}
+
+.yztel {
+    font-size: 12px;
+    position: absolute;
+    padding: 8px 12px 8px 24px;
+    z-index: 2;
+    top: 67px;
+    left: 410px;
+    line-height: 20px;
+    background: #FFF5D9;
+    border-radius: 8px;
+    display: none;
+}
+
+.yztel i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    color: #EF3C79;
+}
+
+.iconcuowu {
+    color: #F32613;
+    font-size: 25px !important;
+    display: none;
+    position: absolute;
+    left: 350px;
+    top: 140px;
+    font-weight: bold;
+}
+
+.yzm {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background: url(../images//yzm.jpeg) no-repeat 0 0;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+#name {
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+    height: 28px;
+    border: none;
+    outline: none;
+}
+
+.yzname {
+    font-size: 12px;
+    position: absolute;
+    padding: 8px 12px 8px 24px;
+    z-index: 2;
+    top: 200px;
+    left: 390px;
+    line-height: 20px;
+    background: #FFF5D9;
+    border-radius: 8px;
+    display: none;
+}
+
+.icongantanhao {
+    font-size: 12px !important;
+}
+
+.icongantanhao::before {
+    padding-right: 10px;
+    color: #F32613;
+}
+
+#pas {
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+    height: 28px;
+    border: none;
+    outline: none;
+}
+
+.yzpas {
+    font-size: 12px;
+    position: absolute;
+    padding: 8px 12px 8px 24px;
+    z-index: 2;
+    top: 265px;
+    left: 390px;
+    line-height: 20px;
+    background: #FFF5D9;
+    border-radius: 8px;
+    display: none;
+}
+
+#btn {
+    width: 400px;
+    height: 42px;
+    background: #EF3C79;
+    border: none;
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.zhuceright {
+    width: 180px;
+    height: 500px;
+    margin-left: 20px;
+    float: right;
+    padding: 20px 0 0 19px;
+    font-size: 15px;
+    color: #555;
+    border-left: solid 1px #E6E6E6;
+}
+
+.zhuceright img {
+    margin: 10px 0 0 5px;
+}
+
+#logo {
+    width: 100%;
+    height: 82px;
+    background: #fff;
+}
+
+#logo div {
+    width: 1000px;
+    height: 82px;
+    margin: auto;
+}
+
+#logo img {
+    margin-top: 10px;
+    float: left;
+}
+
+#logo p {
+    margin-top: 40px;
+    float: right;
+    font-size: 16px;
+    color: #555;
+}
+
+#login {
+    color: #EF3C79;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background: #FAFAFA;
+    font-size: 12px;
+    color: #666;
+}
+
+#footer p {
+    margin-top: 20px;
+}

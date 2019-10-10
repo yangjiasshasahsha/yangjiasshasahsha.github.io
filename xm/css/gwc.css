@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.s-top {
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.s-top h3 {
+    height: 30px;
+    font-size: 24px;
+    color: #555;
+
+    font-weight: 200;
+}
+
+.s-top p {
+    height: 30px;
+    font-size: 12px;
+    color: #555;
+    font-weight: 200;
+}
+
+#shoppingCar {
+    width: 1200px;
+    margin: auto;
+}
+
+#shoppingCar #logo {
+    position: absolute;
+    top: -70px;
+    left: 0px;
+}
+
+#shoppingCar .gwc_hed {
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+
+#shoppingCar .gwc_hed span {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#shoppingCar .gwc_hed span:nth-child(2) {
+    padding-left: 5px;
+}
+
+#shoppingCar .gwc_hed span:nth-child(3) {
+    padding-left: 260px;
+}
+
+#shoppingCar .gwc_hed span:nth-child(4) {
+    padding-left: 210px;
+}
+
+#shoppingCar .gwc_hed span:nth-child(5) {
+    padding-left: 117px;
+}
+
+#shoppingCar .gwc_hed span:nth-child(6) {
+    padding-left: 167px;
+}
+
+#shoppingCar .gwc_hed span:nth-child(7) {
+    padding-left: 143px;
+}
+
+ul {
+    list-style: none;
+}
+
+#shoppingCar .name {
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+#shoppingCar .checkall {
+    outline: none;
+    vertical-align: middle;
+}
+
+#shoppingCar .check {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    outline: none;
+    vertical-align: middle;
+}
+
+#shoppingCar .dianpu {
+    padding-left: 15px;
+}
+
+#shoppingCar ul li {
+    height: 100px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding-left: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#shoppingCar .gwc_imgs {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border: 1px solid #ccc;
+    margin-left: 66px;
+}
+
+#shoppingCar .text {
+    width: 300px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    line-height: 20px;
+}
+
+#shoppingCar .text span:nth-child(1) span {
+    display: inline-block;
+    height: 16px;
+    color: #FFF;
+    background-color: #ff875a;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
+#shoppingCar .text span:nth-child(1) {
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+}
+
+#shoppingCar .text img {
+    width: 16px;
+    height: 16px;
+}
+
+#shoppingCar .money {
+    position: absolute;
+    top: 20px;
+    left: 560px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#shoppingCar .gwcnum {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    font-size: 0;
+}
+
+#shoppingCar .btnjia {
+    display: inline-block;
+    width: 26px;
+    height: 27px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    background: #ccc5;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+}
+
+#shoppingCar .btnjian {
+    display: inline-block;
+    width: 26px;
+    height: 27px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    background: #ccc5;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+}
+
+#shoppingCar .num {
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 1px;
+}
+
+#shoppingCar .moneyall {
+    color: #EF3C79;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 915px;
+}
+
+#shoppingCar .scj {
+    position: absolute;
+    top: 20px;
+    left: 1105px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.scj:hover,
+.del:hover {
+    color: #EF3C79;
+}
+
+#shoppingCar .del {
+    position: absolute;
+    top: 40px;
+    left: 1105px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+#shoppingCar .gwc_footer {
+    height: 40px;
+    width: 1200px;
+    background: #FAFAFA;
+}
+
+#shoppingCar .gwc_footer span:nth-child(1) {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+#shoppingCar .gwc_footer span:nth-child(2) {
+    float: right;
+    background-color: #aaaa;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 20px;
+    color: #Fff;
+    line-height: 40px;
+}
+
+#shoppingCar .gwc_footer span:nth-child(3) {
+    float: right;
+    color: #333;
+    line-height: 40px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+#shoppingCar .gwc_footer span:nth-child(4) {
+    font-size: 22px;
+    line-height: 35px;
+    color: #EF3C79;
+    float: right;
+    margin-right: 5px;
+}
+
+#shoppingCar .gwc_footer span:nth-child(5) {
+    float: right;
+    color: #333;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+#shoppingCar .gwc_dianpu {
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+    height: 20px;
+    background-color: #FFF;
+    padding: 20px 10px 10px;
+}
+
+#shoppingCar .gwc_dianpu div {
+    display: inline-block;
+    border: dotted 1px #FF875A;
+    margin-left: 10px;
+}
+
+#shoppingCar .gwc_dianpu div span:nth-child(1) {
+    color: #FFF;
+    background-color: #FF875A;
+    vertical-align: top;
+    display: inline-block;
+    height: 24px;
+    padding: 0 5px;
+    margin-right: 8px;
+}
+
+#shoppingCar .gwc_allmey {
+    height: 20px;
+    width: 1180px;
+    padding: 8px 10px;
+}
+
+#shoppingCar .gwc_allmey span {
+    float: right;
+    font-size: 12px;
+    color: #333;
+}
+
+#shoppingCar .gwc_allmey span:nth-child(2) {
+    margin-right: 10px;
+}
+
+.s-list {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid #eee;
+}
+
+.s-list .title {
+    color: #666;
+    padding: 8px 19px;
+    border-bottom: solid 1px #EEE;
+    font-size: 14px;
+}
+
+.s-list ul {
+    width: 1200px;
+    height: 292px;
+}
+
+.s-list ul li {
+    width: 291px;
+    height: 292px;
+    float: left;
+}
+
+.s-list ul li img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.s-list ul li p {
+    font-size: 12px;
+    display: block;
+    width: 198px;
+    margin: auto;
+    color: #333;
+}
+
+.s-list ul li p:nth-child(3) {
+    color: #EF3C79;
+    font-size: 14px;
+    font-weight: 600;
+}
