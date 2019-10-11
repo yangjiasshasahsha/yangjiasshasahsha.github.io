@@ -575,7 +575,13 @@
                         })
                     })
                 } else {
-                    window.location.href = '../html/login.html';
+                    if (getcookie('url')) {
+                        removecookie('url');
+                        setcookie('url', window.location.href, 0);
+                    } else {
+                        setcookie('url', window.location.href, 0);
+                    }
+                    window.location.href = 'login.html';
                 }
             })
             //关闭购物车提示
@@ -584,7 +590,7 @@
             })
             //查看购物车
             $('.lookcar').click(function () {
-                window.open('../html/gwc.html')
+                location.href = '../html/gwc.html';
             })
             //继续购物
             $('.goonbuy').click(function () {

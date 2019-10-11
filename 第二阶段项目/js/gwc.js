@@ -49,31 +49,35 @@ function shoppingCar({ ele }) {
         })
         function creat(str) {
             let arr = JSON.parse(str);
-            console.log(arr);
-            let html = arr.obj.map((item) => {
-                return `<li data-id="${item.id}">
-                <input type="checkbox" class="check">
-                <img src="${item.img}" alt="" class="gwc_imgs">
-                <span class="text">
-                <span> <span>海外购</span> ${item.name}</span>
-               </br>
-                <span>
-                <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/05890672784766467_60.gif" alt="">
-                <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/05890672577896183_60.gif" alt="">
-                <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/jswl_60.gif" alt="">
-                </span>
-                </span>
-                <span class="money">￥${item.price}</span>
-                <div class="gwcnum" data-kucun="${item.sum}">
-                    <span class="btnjian">-</span>
-                    <input type="text" class="num" value="${item.num}">
-                    <span class="btnjia">+</span>
-                </div>
-                <span class="moneyall">${(item.price * item.num).toFixed(2)}</span>
-                <span class="scj">移入收藏夹</span>
-                <span class="del">删除</span>
-        </li>`
-            }).join('');
+            let html = '';
+            if (arr.obj.length) {
+                html = arr.obj.map((item) => {
+                    return `<li data-id="${item.id}">
+                    <input type="checkbox" class="check">
+                    <img src="${item.img}" alt="" class="gwc_imgs">
+                    <span class="text">
+                    <span> <span>海外购</span> ${item.name}</span>
+                   </br>
+                    <span>
+                    <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/05890672784766467_60.gif" alt="">
+                    <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/05890672577896183_60.gif" alt="">
+                    <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/jswl_60.gif" alt="">
+                    </span>
+                    </span>
+                    <span class="money">￥${item.price}</span>
+                    <div class="gwcnum" data-kucun="${item.sum}">
+                        <span class="btnjian">-</span>
+                        <input type="text" class="num" value="${item.num}">
+                        <span class="btnjia">+</span>
+                    </div>
+                    <span class="moneyall">${(item.price * item.num).toFixed(2)}</span>
+                    <span class="scj">移入收藏夹</span>
+                    <span class="del">删除</span>
+            </li>`
+                }).join('');
+            } else {
+                html = `<div class="no-gwc"><img src="../images/nogwc.jpg" alt=""></div>`
+            }
             list.innerHTML = html;
             //加减
             var g_num = ele.getElementsByClassName('num');//商品数量
@@ -270,7 +274,76 @@ function shoppingCar({ ele }) {
                 allmoney.innerHTML = (nummoney).toFixed(2);//渲染总价格并保留两位小数
                 allmey1.innerHTML = (nummoney).toFixed(2);//渲染总价格并保留两位小数
             }
-        }//
+            //足迹
+            let cookie = getcookie('username');
+            $.ajax({
+                type: 'get',
+                url: '../api/footprint/foot.php',
+                data: {
+                    cookie
+                },
+                dataType: 'json',
+                success: str => {
+                    let html = str.map(item => {
+                        return `<div><img src="${item.img}" alt=""></div>`
+                    }).join('');
+                    $('.my-zuji-list').html(html);
+                }
+            })
+            //小购物车
+            creatcarr();
+            function creatcarr() {
+                $.ajax({
+                    type: 'get',
+                    url: '../api/shoppingcar/car.php',
+                    data: {
+                        cookie
+                    },
+                    dataType: 'json',
+                    success: str => {
+                        //购物车商品个数
+                        $('.numcar').html(str.obj.length);
+                        //小购物车
+                        let meyall = 0;
+                        let html = str.obj.map(item => {
+                            meyall += item.num * item.price * 1;
+                            return `<li data-id="${item.id}">
+                 <div>
+                     <img src="${item.img}" alt="">
+                 </div>
+                 <p>${item.name}</p>
+                 <p><span>¥${item.price}</span>×<span>${item.num}</span></p>
+                 <p class="headdel">删除</p>
+             </li>`
+                        }).join('');
+                        //渲染总数量以及总价格 
+                        $('.car-list').html(html);
+                        $('.headnumall').html(str.obj.length);
+                        $('.headmeyall').html('￥' + meyall.toFixed(2));
+                        //跳转购物车
+                        $('.car-foot div').click(function () {
+                            window.open('../html/gwc.html');
+                        })
+                        //删除商品
+                        $('.headdel').click(function () {
+                            let id = $(this.parentNode).attr('data-id');
+                            console.log(id);
+                            $.ajax({
+                                type: 'get',
+                                url: '../api/shoppingcar/del.php',
+                                data: {
+                                    id,
+                                },
+                                success: str => {
+                                    creatcarr();
+                                }
+                            })
+                        })
+                    }
+
+                })
+            }
+        }
     }
 
 }

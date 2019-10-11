@@ -366,3 +366,8 @@ ul {
     font-size: 14px;
     font-weight: 600;
 }
+
+.no-gwc img {
+    display: block;
+    margin: auto;
+}
