@@ -1,5 +1,5 @@
 <h2>第二阶段项目</h2>
-<a href="yangjiasshasahsha.github.io/?https://yangjiasshasahsha.github.io/第二阶段项目/index1.html">百洋商城</a>
+<a href="yangjiasshasahsha.github.io/?https://yangjiasshasahsha.github.io//index.html">百洋商城</a>
 
 
 <h2>day17</h2>
